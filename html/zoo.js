@@ -30,7 +30,7 @@ if (/mobile/i.test(window.navigator.userAgent)) {
 }
 
 $(document).ready(function () {
-    // document.getElementById("left_panel_innertext").scrollLeft = 1506;
+    document.getElementById("left_panel_innertext").scrollLeft = 788;
 
     function goLeft () {
         if (!window.locked && ($("#leftarm").css("left") === "0px" || window.mobile)) {
