@@ -3,3 +3,5 @@
 html/files/*
 html/resources/*
 google*.html
+.eslintrc
+.csslintrc

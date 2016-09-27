@@ -1,6 +1,6 @@
 /* ==== Toplevel Classes ==== */
 ::-webkit-scrollbar {
-      width: 0;
+    width: 0;
 }
 .fill {
     position: absolute;
@@ -8,8 +8,11 @@
     bottom: 0;
     left: 0;
     right: 0;
+    -o-transition: transform 1s, -webkit-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
     transition: transform 1s;
-    -webkit-transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
     -moz-transition: transform 1s;
     -ms-transition: transform 1s;
 }
@@ -23,9 +26,11 @@
 }
 .panel {
     background: -webkit-radial-gradient(white, #00B1Fc 100%) !important;
-    background: -o-radial-gradient(white, #00B1Fc 100%) !important;
-    background: -moz-radial-gradient(white, #00B1Fc 100%) !important;
+    background: -webkit-gradient(radial, white, #00B1Fc 100%) !important;
     background: -ms-radial-gradient(white, #00B1Fc 100%) !important;
+    background: radial-gradient(white, #00B1Fc 100%) !important;
+    background: -moz-radial-gradient(white, #00B1Fc 100%) !important;
+    background: -o-radial-gradient(white, #00B1Fc 100%) !important;
 }
 .canvas {
     width: 1000px;
@@ -34,26 +39,29 @@
 .center {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     position: absolute;
 }
 .centerY {
     top: 50%;
-    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
     position: absolute;
 }
 .centerX {
     left: 50%;
-    transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
 }
 .righthalf {
@@ -82,27 +90,29 @@
     position: absolute;
     height: 100px;
     width: 100px;
-    border-radius: 50px;
     -webkit--border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
+    border-radius: 50px;
     background: #E88730;
-    user-select: none;
+    -ms-user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    user-select: none;
 }
 .innercircle {
     height: 80px;
     width:80px;
-    border-radius: 40px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
+    border-radius: 40px;
     background: #8FDDFE;
-    transition: background 1s;
+    -o-transition: background 1s;
     -webkit-transition: background 1s;
     -moz-transition: background 1s;
     -ms-transition: background 1s;
+    transition: background 1s;
 }
 .top {
     position: absolute;
@@ -128,10 +138,11 @@
     height: 600px;
 }
 #center_panel {
-    user-select: none;
+    -ms-user-select: none;
     -o-user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    user-select: none;
 }
 
 /* ==== Left Pane ==== */
@@ -146,10 +157,11 @@
 }
 #leftarm {
     left: 197px;
-    transition: left 1s;
+    -o-transition: left 1s;
     -webkit-transition: left 1s;
     -moz-transition: left 1s;
     -ms-transition: left 1s;
+    transition: left 1s;
 }
 #menu_council {
     top: 100px;
@@ -165,24 +177,26 @@
     background: #e9ba8f;
 }
 #left_panel {
-    transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
     background: white;
 }
 #left_panel .canvas {
     background: #D0F1F5;
     box-sizing: border-box;
     transition: border-color 1s;
+    -o-transition: border-color 1s;
     -webkit-transition: border-color 1s;
     -moz-transition: border-color 1s;
     -ms-transition: border-color 1s;
     border: 10px solid white;
-    border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
+    border-radius: 25px;
 }
 #leftsecond {
     position: absolute;
@@ -193,22 +207,24 @@
     right: 479px;
     background: #E88730;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
-    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
+    border-radius: 10px;
 }
 #leftreturn {
     position: absolute;
     overflow-x: hidden;
-    width: 0%;
+    width: 0;
     height: 20px;
     top: 140px;
     background: #E88730;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
@@ -219,10 +235,11 @@
 #menu_leftreturn {
     right: -10px;
     top: 89px;
-    transform: background: 1s;
-    -webkit-transform: background: 1s;
-    -moz-transform: background: 1s;
-    -ms-transform: background: 1s;
+    -o-transform: background 1s;
+    -webkit-transform: background 1s;
+    -moz-transform: background 1s;
+    -ms-transform: background 1s;
+    transform: background 1s;
 }
 #menu_leftreturn:hover {
     cursor: pointer !important;
@@ -235,23 +252,25 @@
 /* ==== Right Panel ==== */
 
 #right_panel {
-    transform: translateX(100%);
+    -o-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
+    transform: translateX(100%);
     background: white;
 }
 #right_panel .canvas {
     box-sizing: border-box;
     transition: border-color 1s;
+    -o-transition: border-color 1s;
     -webkit-transition: border-color 1s;
     -moz-transition: border-color 1s;
     -ms-transition: border-color 1s;
     border: 10px solid white;
-    border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
+    border-radius: 25px;
     background: #8FDDFE;
 }
 #menu_events {
@@ -266,6 +285,7 @@
     bottom: 66px;
     overflow-x: hidden;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
@@ -292,22 +312,24 @@
     left: 400px;
     background: #E88730;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
-    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
+    border-radius: 10px;
 }
 #rightreturn {
     position: absolute;
     overflow-x: hidden;
-    width: 0%;
+    width: 0;
     height: 20px;
     bottom: 72px;
     background: #E88730;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
@@ -331,7 +353,7 @@
 #right_panel_innertext:first-child {
     padding-left: 100px;
 }
-#right_panel_innertext img {
+#right_panel_innertext img { /* csslint allow: display-property-grouping */
     height: 560px;
     display: inline;
     white-space: nowrap;
@@ -351,6 +373,7 @@
     top: 58px;
     overflow-x: hidden;
     transition: width 1s;
+    -o-transition: width 1s;
     -webkit-transition: width 1s;
     -moz-transition: width 1s;
     -ms-transition: width 1s;
@@ -369,24 +392,26 @@
     cursor: pointer !important;
 }
 #up_panel {
-    transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
     background: white;
 }
 #up_panel .canvas {
     background: #D0F1F5;
     box-sizing: border-box;
     transition: border-color 1s;
+    -o-transition: border-color 1s;
     -webkit-transition: border-color 1s;
     -moz-transition: border-color 1s;
     -ms-transition: border-color 1s;
     border: 10px solid white;
-    border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
+    border-radius: 25px;
 }
 #upsecond {
     position: absolute;
@@ -397,26 +422,28 @@
     right: 379px;
     background: #E88730;
     transition: height 1s;
+    -o-transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
-    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
+    border-radius: 10px;
 }
 #upreturn {
     position: absolute;
     overflow-y: hidden;
     width: 20px;
     height: 0;
-    bottom: 0px;
+    bottom: 0;
     right: 379px;
     background: #E88730;
-    transition: height 1s;
+    -o-transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
+    transition: height 1s;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -437,7 +464,7 @@
     position: absolute;
 }
 #media {
-    padding: 10px;
+    padding: 10px; /* csslint allow: box-model */
     text-align: center;
     width: 100%;
 }
@@ -475,6 +502,7 @@
     left: 318px;
     top: 405px;
     transition: height 1s;
+    -o-transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
@@ -494,24 +522,26 @@
     cursor: pointer !important;
 }
 #down_panel {
-    transform: translateY(100%);
+    -o-transform: translateY(100%);
     -webkit-transform: translateY(100%);
     -moz-transform: translateY(100%);
     -ms-transform: translateY(100%);
+    transform: translateY(100%);
     background: white;
 }
 #down_panel .canvas {
     background: #D0F1F5;
     box-sizing: border-box;
     transition: border-color 1s;
+    -o-transition: border-color 1s;
     -webkit-transition: border-color 1s;
     -moz-transition: border-color 1s;
     -ms-transition: border-color 1s;
     border: 10px solid white;
-    border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
+    border-radius: 25px;
 }
 #downsecond {
     position: absolute;
@@ -522,13 +552,14 @@
     left: 323px;
     background: #E88730;
     transition: height 1s;
+    -o-transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
-    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
+    border-radius: 10px;
 }
 #downreturn {
     position: absolute;
@@ -538,6 +569,7 @@
     left: 323px;
     background: #E88730;
     transition: height 1s;
+    -o-transition: height 1s;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
@@ -560,7 +592,7 @@
 
 
 
-* {
+* { /* csslint allow: universal-selector */
     margin: 0;
     padding: 0;
 }
@@ -568,6 +600,7 @@
     padding-top: 20px;
     position: relative;
     transition: all 0.5s;
+    -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -579,6 +612,7 @@
     position: relative;
     padding: 20px 5px 0 5px;
     transition: all 0.5s;
+    -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -589,7 +623,7 @@
     position: absolute;
     top: 0;
     right: 50%;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc; /* csslint allow: box-model */
     width: 50%;
     height: 20px;
 }
@@ -611,15 +645,15 @@
 }
 .tree li:last-child::before {
     border-right: 1px solid #ccc;
-    border-radius: 0 5px 0 0;
     -webkit-border-radius: 0 5px 0 0;
     -moz-border-radius: 0 5px 0 0;
     -ms-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
 }
 .tree li:first-child::after {
-    border-radius: 5px 0 0 0;
     -webkit-border-radius: 5px 0 0 0;
     -moz-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0;
 }
 .tree ul ul::before {
     content: '';
@@ -638,10 +672,11 @@
     font-family: arial, verdana, tahoma;
     font-size: 20px;
     display: inline-block;
-    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    border-radius: 5px;
     transition: all 0.5s;
+    -o-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -659,7 +694,7 @@
     border-color:  #94a0b4;
 }
 #tree_wrapper {
-    padding-top: 100px;
+    padding-top: 100px; /* csslint allow: box-model */
     width: 2570px;
     height: 500px;
 }
