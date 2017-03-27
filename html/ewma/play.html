@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ENGG Week Movie Archive</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+        <script>
+            function init () {
+                var q = document.location.search.substring(1);
+                q = q.split("&");
+                window.querystring = {};
+                for (var i = 0; i < q.length; i++) {
+                    var p = q[i].split("=");
+                    window.querystring[decodeURIComponent(p[0])] = decodeURIComponent(p[1]);
+                }
+                if (window.querystring.hasOwnProperty("id") && !isNaN(parseInt(window.querystring.id, 10))) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "getmovie.php?id=" + window.querystring.id);
+                    xhr.responseType = "json";
+                    xhr.onload = function () {
+                        if (xhr.status === 200) {
+                            getMovie(xhr.response);
+                        } else {
+                            displayError("Bad response code: " + xhr.status);
+                        }
+                    };
+                    xhr.send();
+                } else {
+                    displayError("Movie not found");
+                }
+            }
+            function displayError (message) {
+                document.getElementById("canvas").style.display = "none";
+                document.getElementById("errorMessage").innerText = message;
+                document.getElementById("error").style.display = "block";
+            }
+            function getMovie (json) {
+                console.log(json);
+                if (json.error) {
+                    displayError(json.message);
+                    return;
+                }
+                document.title = "EWMA | " + json.title;
+                if (json.src) {
+                    var elemVideo = document.createElement("video");
+                    elemVideo.classList.add("movieElement");
+                    elemVideo.setAttribute("src", "/ewma/movies/" + json.src);
+                    elemVideo.setAttribute("controls", "");
+                    elemVideo.setAttribute("type", json.mime);
+                    document.getElementById("movie_src").appendChild(elemVideo);
+                } else {
+                    document.getElementById("movie_src").innerHTML = "<div id='movieer'>Error: No source file</div>";
+                }
+                for (var i = 0; i < json.awards.length; i++) {
+                    var elemAward = document.createElement("div");
+                    if (json.awards[i].note) {
+                        elemAward.classList.add("tooltip");
+                        var elemAwardNote = document.createElement("span");
+                        elemAwardNote.classList.add("awardNote");
+                        elemAwardNote.classList.add("tooltiptext");
+                        elemAwardNote.innerText = json.awards[i].note;
+                        elemAward.appendChild(elemAwardNote);
+                    }
+                    elemAward.classList.add("award");
+                    var elemAwardILeft = document.createElement("img");
+                    elemAwardILeft.setAttribute("src", "award_left.png");
+                    elemAwardILeft.setAttribute("type", "image/png");
+                    elemAwardILeft.classList.add("awardILeft");
+                    elemAwardILeft.classList.add("awardI");
+                    elemAward.appendChild(elemAwardILeft);
+                    var elemAwardTitle = document.createElement("div");
+                    elemAwardTitle.innerHTML = json.awards[i].award.replace(/ /gmi, "<br>");
+                    elemAwardTitle.classList.add("awardTitle");
+                    elemAward.appendChild(elemAwardTitle);
+                    var elemAwardIRight = document.createElement("img");
+                    elemAwardIRight.setAttribute("src", "award_right.png");
+                    elemAwardIRight.setAttribute("type", "image/png");
+                    elemAwardIRight.classList.add("awardIRight");
+                    elemAwardIRight.classList.add("awardI");
+                    elemAward.appendChild(elemAwardIRight);
+                    document.getElementById("movie_awards").appendChild(elemAward);
+                }
+                document.getElementById("movie_title").innerText = json.title ? json.title : "Untitled";
+                document.getElementById("movie_year").innerText = json.year ? json.year : "????";
+                document.getElementById("movie_dept").innerText = json.display_dept ? json.display_dept : "Unknown Department";
+                if (json.rating !== null) {
+                    document.querySelector("#movie_rating .full-stars").style.width = json.rating + "%";
+                } else {
+                    document.getElementById("movie_rating").style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body onload="javascript:init();">
+        <div id="error">
+            An error occured
+            <div id="errorMessage"></div>
+        </div>
+        <div id="site">
+            <div id="header">
+                <a href="index.html"><img type="image/png" src="logo.png"></a>
+            </div>
+            <div id="canvas">
+                <div id="movie">
+                    <div id="twr">
+                        <div id="movie_title"></div>
+                        <hr>
+                        <div id="movie_year"></div>
+                        <div id="movie_dept"></div>
+                        <div id="movie_rating" class="ratings">
+                            <div class="empty-stars"></div>
+                            <div class="full-stars"></div>
+                        </div>
+                    </div>
+                    <div id="bwr">
+                        <div id="movie_src"></div>
+                        <div id="movie_awards"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="footer-content">
+                    The ENGG Week Movie Archive is Proudly Maintained by ZOO.<br>
+                    Have movies/awards that we don't have or know about? Let us know at <a href="mailto:ewma@zooengg.ca">ewma@zooengg.ca</a><br>
+                    Contact: <a href="mailto:webmaster@zooengg.ca">webmaster@zooengg.ca</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

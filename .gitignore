@@ -5,3 +5,4 @@ html/resources/*
 google*.html
 .eslintrc
 .csslintrc
+db.db
