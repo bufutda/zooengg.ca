@@ -1,0 +1,9 @@
+#center-panel {
+    display: none;
+}
+#left-panel, #right-panel, #top-panel, #bottom-panel {
+    transform: none;
+}
+.fill {
+    position: relative;
+}

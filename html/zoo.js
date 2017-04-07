@@ -30,7 +30,12 @@ if (/mobile/i.test(window.navigator.userAgent)) {
 }
 
 $(document).ready(function () {
-    document.getElementById("left_panel_innertext").scrollLeft = 788;
+    $("#left_panel_innertext").load("council.html", function () {
+        document.getElementById("left_panel_innertext").scrollLeft = 788;
+    });
+    $("#up_panel_innertext").load("about.html");
+    $("#right_panel_innertext").load("events.html");
+    $("#down_panel_innertext").load("sponsors.html");
 
     function goLeft () {
         if (!window.locked && ($("#leftarm").css("left") === "0px" || window.mobile)) {
