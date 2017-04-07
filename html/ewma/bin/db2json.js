@@ -16,6 +16,14 @@ db.on("open", function (err) {
         var ev = new Event();
         ev.on("next", function (i) {
             if (i === movies.length) {
+                movies.sort(function (a, b) {
+                    if (a.year > b.year) {
+                        return 1;
+                    } else if (a.year === b.year) {
+                        return 0;
+                    }
+                    return -1;
+                });
                 console.log(JSON.stringify(movies, null, 4));
                 db.close();
                 return;
