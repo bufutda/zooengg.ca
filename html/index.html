@@ -1,277 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>
             ZOO Engineering UofC
         </title>
-        <link rel="stylesheet" type="text/css" href="zoo.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"/>
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="manifest" href="/manifest.json"/>
-        <link rel="canonical" href="https://zooengg.ca"/>
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
         <meta name="keywords" content="university, club, calgary, engineering, software, ucalgary, computer, zoo">
         <meta name="description" content="The Electrical, Software, and Computer Engineering Students' Society at the University of Calgary is an organization committed to providing students with a variety of academic and social events to enrich their experience at university and throughout their degree.">
-        <meta name="copyright" content="Copyright 2016 Mitchell Sawatzky">
+        <meta name="copyright" content="Copyright 2017 Jared Brintnell">
         <meta name="viewport" content="width=400, initial-scale=1">
-        <script type="text/javascript" src="../resources/jquery.min.js"></script>
-        <script type="text/javascript" src="zoo.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="icon" href="zoo.png">
+        <link rel="canonical" href="https://zooengg.ca"/>
     </head>
-    <body>
-        <div id="fb-root"></div>
-        <script>
-        (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <div id="site">
-            <!--center-->
-            <div id="center_panel" class="fill panel">
-                <div class="lefthalf centerY"><div id="leftsecond"></div></div>
-                <div class="tophalf centerX"><div id="upsecond"></div></div>
-                <div class="righthalf centerY"><div id="rightsecond"></div></div>
-                <div class="bottomhalf centerX"><div id="downsecond"></div></div>
-                <div class="canvas center">
-                    <div id="menu_council" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Council
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movingpartleft">
-                        <img src="zooarmextended.png" class="top" id="leftarm"/>
-                    </div>
-                    <div id="menu_events" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Events
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movingpartright">
-                        <img src="zooarmextendright.png" class="top" id="rightarm"/>
-                    </div>
-                    <div id="menu_about" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                About
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movingpartup">
-                        <img src="zooarmextendup.png" class="top" id="uparm"/>
-                    </div>
-                    <div id="menu_sponsers" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Sponsors
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movingpartdown">
-                        <img src="zooarmextenddown.png" id="downarm"/>
-                    </div>
-                    <img src="zoo.png" id="zoo" class="center" usemap="#nothingtoseehere"/>
-                    <map name="nothingtoseehere">
-                        <area shape="rect" coords="297,199,299,203" alt="" style="cursor: default !important;" href="https://sawa.tzky.ca/zoo/nothingtoseehere.php">
-                    </map>
+    <body onload="currentSlide(1); startTimer();">
+        <div class="site">
+            <div class="fill bgcolor">
+                <img class="watermark" src="zoo.png">
+                <div class="navbar">
+                    <a class="navbox home" href="index.html">
+                        Home
+                    </a>
+                    <a class="navbox about" href="about/index.html">
+                        About
+                    </a>
+                    <a class="navbox events" href="events/index.html">
+                        Events
+                    </a>
+                    <a class="navbox council" href="council/index.html">
+                        Council
+                    </a>
+                    <a class="navbox sponsors" href="sponsors/index.html">
+                        Sponsors
+                    </a>
                 </div>
-            </div>
-            <div id="left_panel" class="fill panel">
-                <div class="centerY righthalf">
-                    <div id="leftreturn"></div>
-                </div>
-                <div class="canvas center">
-                    <div id="left_panel_innertext" class="tree">
-                        <div id="tree_wrapper">
-                            <ul>
-                                <li>
-                                    <a href="mailto:president@zooengg.ca">President<br>Muriel Singleton</a>
-                                    <ul>
-                                        <li>
-                                            <a href="mailto:academic@zooengg.ca">VP Academic<br>Mario Minardi</a>
-                                            <ul>
-                                                <!--li>
-                                                    ZOO Trip Director<br>
-                                                </li>
-                                                <li>
-                                                    ZOO Trip Director<br>
-                                                </li-->
-                                                <li>
-                                                    <a>Professional Development Commissioner<br>Diana Dang</a>
-                                                </li>
-                                            </ul>
-                                            <li>
-                                                <a href="mailto:finance@zooengg.ca">VP Finance<br>Mitchell Sawatzky</a>
-                                                <!--ul>
-                                                    <li>
-                                                        Sponsorship Commissioner<br>
-                                                    </li>
-                                                </ul-->
-                                            </li>
-                                            <li>
-                                                <a href="mailto:internal@zooengg.ca">VP Internal<br>Connor Newman</a>
-                                                <ul>
-                                                    <!--li>
-                                                        Second Year Rep<br>
-                                                    </li-->
-                                                    <li>
-                                                        <a>Operations Commissioner<br>Connor Britton</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:external@zooengg.ca">VP External<br>Mason Brothers</a>
-                                                <ul>
-                                                    <li>
-                                                        <a>Information &amp; Technologies Commissioner<br>Jeff Swarts</a>
-                                                    </li>
-                                                    <!--li>
-                                                        Social Commissioner<br>
-                                                    </li-->
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:events@zooengg.ca">VP Events<br>Brody Middleton</a>
-                                                <ul>
-                                                    <li>
-                                                        <a>Frosh/ENGG Week Commissioner<br>Devon Slongo</a>
-                                                    </li>
-                                                    <li>
-                                                        <a>Frosh/ENGG Week Commissioner<br>Nate Barke</a>
-                                                    </li>
-                                                    <li>
-                                                        <a>Frosh/ENGG Week Commissioner<br>Troy Brintnell</a>
-                                                    </li>
-                                                    <li>
-                                                        <a>Key Clue Commissioner<br>Christopher Smith</a>
-                                                    </li>
-                                                    <!--li>
-                                                        <a href="">Social Events Commissioner<br></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Social Events Commissioner<br></a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Artistic Commissioner<br></a>
-                                                    </li-->
-                                                </ul>
-                                            </li>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <div class="size">
+                    <div onmouseout="startTimer()" class="displaybox slidebox">
+                        <div class="slides fade">
+                            <a href="">
+                                <img src="Welcome.png" class="slideImg">
+                            </a>
                         </div>
-                    </div>
-                    <div id="menu_leftreturn" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Return
-                            </div>
+                        <div class="slides fade">
+                            <a href="events/index.html">
+                                <img src="MoviePlanning.png" class="slideImg">
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="right_panel" class="fill panel">
-                <div class="centerY lefthalf">
-                    <div id="rightreturn"></div>
-                </div>
-                <div class="canvas center">
-                    <div id="right_panel_innertext">
-                        <a href="https://www.facebook.com/events/1539585916335643/"><img src="https://sawa.tzky.ca/public/zoo/LANParty.png"/></a>
-                        <a href="https://www.facebook.com/events/755466181251643/"><img src="https://sawa.tzky.ca/public/zoo/zookegger.png"/></a>
-                        <a href="https://www.facebook.com/events/1725100741068250/"><img src="https://sawa.tzky.ca/public/zoo/techelecnight.png"/></a>
-                        <a href="https://www.facebook.com/events/1555723691421916/"><img src="https://sawa.tzky.ca/public/zoo/Prof%20Mixer.png"/></a>
-                        <img src="https://sawa.tzky.ca/public/zoo/EW2K16_promo_1.png"/>
-                        <img src="https://sawa.tzky.ca/public/zoo/hoodies2.png"/>
-                        <img src="https://sawa.tzky.ca/public/zoo/lockers2.png"/>
-                    </div>
-                    <div id="menu_rightreturn" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Return
-                            </div>
+                        <div class="slides fade">
+                            <a href="events/index.html">
+                                <img src="SummerBreak.png" class="slideImg">
+                                </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="down_panel" class="fill panel">
-                <div class="centerX tophalf">
-                    <div id="downreturn"></div>
-                </div>
-                <div class="canvas center">
-                    <div id="down_panel_innertext">
-                        <br><br><br><br><br><br><br>
-                        We are currently seeking sponsors for the 2016/2017 school year. If you are interested in sponsoring ZOO, please send us an email at <a href="mailto:sponsorship@zooengg.ca" class="betterlink">sponsorship@zooengg.ca</a>, and you are also welcome to take a look at our <a href="/files/Sponsorship%20Package%202016.pdf" class="betterlink">sponsorship package</a>.<br><br>
-
-                        We would love to thank our sponsors who have helped us enable our goals. We strongly appreciate their generosity and their intent to enhance the student life of electrical, software, and computer engineering students.<br><br>
-
-                        <!-- ZOO is currently sponsored by:<br><br>
-                        <a href="http://www.invisiblefence.com/"><img src="invisiblefencebrand.png"></a> -->
-                        <br><br>
-                    </div>
-                    <div id="menu_downreturn" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Return
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="up_panel" class="fill panel">
-                <div class="centerX bottomhalf">
-                    <div id="upreturn"></div>
-                </div>
-                <div class="canvas center">
-                    <div id="up_panel_innertext">
-                        <div id="mediawrapper">
-                            <div id="media" class="center">
-                                <div class="mediadiv">
-                                    <a href="https://twitter.com/zooengg" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @zooengg</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                </div>
-                                <div class="mediadiv">
-                                    <a href="https://twitter.com/intent/tweet?screen_name=zooengg" class="twitter-mention-button" data-size="large">Tweet to @zooengg</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                </div>
-                                <div class="fb-follow mediadiv" data-href="https://www.facebook.com/zooengg" data-width="147" data-height="35" data-layout="standard" data-show-faces="false"></div>
-                            </div>
-                        </div>
-                        <div id="abouttext">
-                            The Electrical, Software, and Computer Engineering Students' Society at the University of Calgary is an organization committed to providing students with a variety of academic and social events to enrich their experience at university and throughout their degree. We strive to represent Electrical, Computer, and Software engineering students at the University of Calgary within the campus, to other universities, and to the community at large.<br><br>
-
-                            As well as the Electrical, Computer, and Software Engineering Students Society, our organization also goes by the name ZOO. Any enquiries for the department of Electrical, Computer, and Software Engineering should be directed to relevant department employee. A list of contacts for the department can be found <a href="http://schulich.ucalgary.ca/node/2979" class="betterlink">here</a>.<br><br>
-
-                            Any enquiries to ZOO should either be voiced in-person in the homeroom (ICT 215), or via email to <a href="mailto:president@zooengg.ca" class="betterlink">president@zooengg.ca</a>. Questions or comments regarding this site should be directed via email to <a href="mailto:webmaster@zooengg.ca" class="betterlink">webmaster@zooengg.ca</a><br><br>
-
-                            ZOO abides by the <a href="/files/constitution_2016.pdf" class="betterlink">Club Constitution (Updated March, 2016)</a>.<br><br>
-
-                            Website design by <a href="https://sawa.tzky.ca" class="betterlink">Mitchell Sawatzky</a>
-                        </div>
-
-
-                    </div>
-                    <div id="menu_upreturn" class="menu">
-                        <div class="innercircle center">
-                            <div class="center">
-                                Return
-                            </div>
-                        </div>
+                        <a class="prev" onclick="plusSlides(-1); stopTimer();">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1); stopTimer();">&#10095;</a>
                     </div>
                 </div>
             </div>

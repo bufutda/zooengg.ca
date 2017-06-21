@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            ZOO | Events
+        </title>
+        <link rel="stylesheet" type="text/css" href="events.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rubik">
+        <link href="fullcalendar.min.css" rel="stylesheet" />
+        <link href="fullcalendar.print.min.css" rel="stylesheet" media="print" />
+        <script src="lib/moment.min.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        <script src="fullcalendar.min.js"></script>
+        <script src="gcal.min.js"></script>
+        <meta name="keywords" content="university, club, calgary, engineering, software, ucalgary, computer, zoo">
+        <meta name="description" content="The Electrical, Software, and Computer Engineering Students' Society at the University of Calgary is an organization committed to providing students with a variety of academic and social events to enrich their experience at university and throughout their degree.">
+        <meta name="copyright" content="Copyright 2017 Jared Brintnell">
+        <meta name="viewport" content="width=400, initial-scale=1">
+        <link rel="icon" href="zoo.png">
+        <link rel="canonical" href="https://zooengg.ca/events"/>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#calendar").fullCalendar({
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'none'
+                    },
+                    height: 530,
+                    eventBorderColor: 'white',
+                    eventColor: '#3ba2e4',
+                    googleCalendarApiKey: "AIzaSyAbmXngJDS_i_jhtpmsAeLgkEurDO6XJ_E",
+                    events: "pv7facrnbitsnl5hmff7evdgec@group.calendar.google.com",
+
+                    eventClick: function(event) {
+                        window.open(event.url, 'gcalevent', 'width=1000,height=500');
+                        return false;
+                    },
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="site">
+            <div class="fill bgcolor">
+                <img class="watermark" src="zoo.png">
+                <div class="navbar">
+                    <a class="navbox home" href="../index.html">
+                        Home
+                    </a>
+                    <a class="navbox about" href="../about/index.html">
+                        About
+                    </a>
+                    <a class="navbox events" href="../events/index.html">
+                        Events
+                    </a>
+                    <a class="navbox council" href="../council/index.html">
+                        Council
+                    </a>
+                    <a class="navbox sponsors" href="../sponsors/index.html">
+                        Sponsors
+                    </a>
+                </div>
+                <div class="size">
+                    <div class="displaybox calendaroutline">
+                    </div>
+                    <div id="calendar" class="calendar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

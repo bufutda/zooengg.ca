@@ -1,0 +1,193 @@
+.size {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    z-index: 1;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.bgcolor {
+    background: #003F5A; /* Browsers without gradient support */
+    background: -webkit-radial-gradient(circle, #008FCF, #003F5A); /* Safari */
+    background: -webkit-gradient(circle, #008FCF, #003F5A); /* Chrome */
+    background: -o-radial-gradient(circle, #008FCF, #003F5A); /* Opera */
+    background: -moz-radial-gradient(circle, #008FCF, #003F5A); /* Firefox */
+    background: radial-gradient(circle, #008FCF, #003F5A); /* Standard */
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.watermark {
+    z-index: 0;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    opacity: 0.3;
+}
+
+.site {
+    min-width: 1200px;
+    min-height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.displaybox {
+    background: rgb(225, 225, 225);
+    border-radius: 10px;
+    border: 10px solid white;
+}
+
+.slidebox {
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slides {
+    display: none;
+}
+
+.slideImg {
+    width: 900px;
+    height: 500px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -o-animation-name: fade;
+    -o-animation-duration: 1.5s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-o-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@-moz-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -42px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid white;
+    background: rgb(225, 225, 225);
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.navbox {
+    line-height: 45px;
+    z-index: 2;
+    top: 0;
+    width: 225px;
+    height: 45px;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Oxygen';
+    color: white;
+    text-shadow: -1px -1px rgba(120, 120, 120, 0.6);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home {
+    left: calc(50% - 470px);
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.about {
+    left: calc(50% - 235px);
+}
+
+.events {
+    left: 50%;
+}
+
+.council {
+    left: calc(50% + 235px);
+}
+
+.sponsors {
+    left: calc(50% + 470px);
+}

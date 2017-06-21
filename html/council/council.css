@@ -1,0 +1,234 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+::-webkit-scrollbar-button {
+    height: 7px;
+}
+
+.size {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    z-index: 1;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.bgcolor {
+    background: #003F5A; /* Browsers without gradient support */
+    background: -webkit-radial-gradient(circle, #008FCF, #003F5A); /* Safari */
+    background: -webkit-gradient(circle, #008FCF, #003F5A); /* Chrome */
+    background: -o-radial-gradient(circle, #008FCF, #003F5A); /* Opera */
+    background: -moz-radial-gradient(circle, #008FCF, #003F5A); /* Firefox */
+    background: radial-gradient(circle, #008FCF, #003F5A); /* Standard */
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.watermark {
+    z-index: 0;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    opacity: 0.3;
+}
+
+.title {
+    top: calc(14% - 20px);
+    left: 4%;
+    position: absolute;
+    font-family: 'Oxygen';
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.councilright {
+    top: 12%;
+    left: 68%;
+    width: calc(56% - 20px);
+    height: calc(83% - 20px);
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+.councilleft {
+    top: 30%;
+    left: 20%;
+    width: calc(32% - 20px);
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    height: calc(56% - 10px);
+}
+
+.counciltextbox {
+    width: calc(100% - 20px);
+    float: left;
+    overflow: hidden;
+}
+.counciltextbox l1 {
+    font-family: 'Oxygen';
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+}
+.counciltextbox l2 {
+    font-family: 'Rubik';
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.councilscrollbox {
+    width: calc(56% - 40px);
+    height: calc(83% - 20px);
+    overflow: auto;
+    top: calc(12% + 10px);
+}
+
+.displaybox {
+    background: rgb(225, 225, 225);
+    background: rgba(150, 150, 150, 0.4);
+    border-radius: 10px;
+    border: 10px solid white;
+}
+
+.box {
+    height: 100px;
+}
+
+.image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #FFFFFF;
+    background-color: #BBBBBB;
+}
+
+.text {
+    float: left;
+    height: 100px;
+    width: calc(60% - 140px);
+}
+.text l1 {
+    font-family: 'Oxygen';
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+}
+.text l2 {
+    font-family: 'Rubik';
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.horizbreak {
+    float: left;
+    height: 100px;
+    width: 10px;
+}
+
+.vertbreak {
+    height: 10px;
+}
+
+.vertbreaklast {
+    height: 16px;
+}
+
+.site {
+    min-width: 1200px;
+    min-height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid white;
+    background: rgb(225, 225, 225);
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.navbox {
+    line-height: 45px;
+    z-index: 2;
+    top: 0;
+    width: 225px;
+    height: 45px;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Oxygen';
+    color: white;
+    text-shadow: -1px -1px rgba(120, 120, 120, 0.6);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home {
+    left: calc(50% - 470px);
+}
+
+.about {
+    left: calc(50% - 235px);
+}
+
+.events {
+    left: 50%;
+}
+
+.council {
+    left: calc(50% + 235px);
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.sponsors {
+    left: calc(50% + 470px);
+}

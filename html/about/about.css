@@ -1,0 +1,198 @@
+.site {
+    min-width: 1200px;
+    min-height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bgcolor {
+    background: #003F5A; /* Browsers without gradient support */
+    background: -webkit-radial-gradient(circle, #008FCF, #003F5A); /* Safari */
+    background: -webkit-gradient(circle, #008FCF, #003F5A); /* Chrome */
+    background: -o-radial-gradient(circle, #008FCF, #003F5A); /* Opera */
+    background: -moz-radial-gradient(circle, #008FCF, #003F5A); /* Firefox */
+    background: radial-gradient(circle, #008FCF, #003F5A); /* Standard */
+}
+
+.watermark {
+    z-index: 0;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    opacity: 0.3;
+}
+
+.size {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    z-index: 1;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.title {
+    top: calc(14% - 20px);
+    left: 4%;
+    position: absolute;
+    font-family: 'Oxygen';
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.aboutbox {
+    top: 30%;
+    left: 57%;
+    width: calc(78% - 20px);
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    height: calc(65% - 20px);
+}
+
+.displaybox {
+    background: rgb(225, 225, 225);
+    background: rgba(150, 150, 150, 0.4);
+    border-radius: 10px;
+    border: 10px solid white;
+}
+
+.abouttextbox {
+    width: calc(100% - 40px);
+    top: 50%;
+    left: 50%;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+.abouttextbox l1 {
+    font-family: 'Oxygen';
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.abouttextbox l2 {
+    font-family: 'Rubik';
+    color: white;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.facebook {
+    left: 4%;
+    top: 40%;
+    position: absolute;
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.mail {
+    left: 4%;
+    top: 62%;
+    position: absolute;
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.uofc {
+    left: 4%;
+    top: 84%;
+    position: absolute;
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid white;
+    background: rgb(225, 225, 225);
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.navbox {
+    line-height: 45px;
+    z-index: 2;
+    top: 0;
+    width: 225px;
+    height: 45px;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Oxygen';
+    color: white;
+    text-shadow: -1px -1px rgba(120, 120, 120, 0.6);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home {
+    left: calc(50% - 470px);
+}
+
+.about {
+    left: calc(50% - 235px);
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.events {
+    left: 50%;
+}
+
+.council {
+    left: calc(50% + 235px);
+}
+
+.sponsors {
+    left: calc(50% + 470px);
+}

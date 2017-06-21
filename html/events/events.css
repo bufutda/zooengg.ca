@@ -1,0 +1,186 @@
+.size {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 600px;
+    z-index: 1;
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.bgcolor {
+    background: #003F5A; /* Browsers without gradient support */
+    background: -webkit-radial-gradient(circle, #008FCF, #003F5A); /* Safari */
+    background: -webkit-gradient(circle, #008FCF, #003F5A); /* Chrome */
+    background: -o-radial-gradient(circle, #008FCF, #003F5A); /* Opera */
+    background: -moz-radial-gradient(circle, #008FCF, #003F5A); /* Firefox */
+    background: radial-gradient(circle, #008FCF, #003F5A); /* Standard */
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.watermark {
+    z-index: 0;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    opacity: 0.3;
+}
+
+.site {
+    min-width: 1200px;
+    min-height: 600px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.calendar {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 70%;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    font-family: 'Oxygen';
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid white;
+    background: rgb(225, 225, 225);
+    background: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.navbox {
+    line-height: 45px;
+    z-index: 2;
+    top: 0;
+    width: 225px;
+    height: 45px;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    position: absolute;
+    text-align: center;
+    font-family: 'Oxygen';
+    color: white;
+    text-shadow: -1px -1px rgba(120, 120, 120, 0.6);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.home {
+    left: calc(50% - 470px);
+}
+
+.about {
+    left: calc(50% - 235px);
+}
+
+.events {
+    left: 50%;
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF;
+}
+
+.council {
+    left: calc(50% + 235px);
+}
+
+.sponsors {
+    left: calc(50% + 470px);
+}
+
+.fc-head {
+    background: rgb(150, 150, 150);
+    background: rgba(150, 150, 150, 0.4);
+}
+
+.fc-day.fc-today {
+    position: relative;
+}
+
+.fc-day.fc-today::before,
+.fc-day.fc-today::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.fc-day.fc-today::before {
+    border-width: 1.5em;
+}
+
+.fc-day.fc-today::after {
+    border-radius: 0;
+    border-width: 1.3em;
+    border-right-color: rgb(159, 205, 236);
+    border-top-color: rgb(159, 205, 236);
+}
+
+.fc-unthemed td.fc-today {
+    background: none !important;
+}
+
+.fc-body {
+    background: rgb(150, 150, 150);
+    background: rgba(150, 150, 150, 0.4);
+}
+
+.displaybox {
+    background: none;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+
+.calendaroutline {
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    width: 70%;
+    height: 470px;
+    -o-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+.fc h2 {
+    font-size: 30px;
+}
