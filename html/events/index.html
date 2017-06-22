@@ -20,7 +20,7 @@
         <link rel="icon" href="zoo.png">
         <link rel="canonical" href="https://zooengg.ca/events"/>
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $("#calendar").fullCalendar({
                     header: {
                         left: 'prev,next today',
@@ -33,10 +33,10 @@
                     googleCalendarApiKey: "AIzaSyAbmXngJDS_i_jhtpmsAeLgkEurDO6XJ_E",
                     events: "pv7facrnbitsnl5hmff7evdgec@group.calendar.google.com",
 
-                    eventClick: function(event) {
+                    eventClick: function (event) {
                         window.open(event.url, 'gcalevent', 'width=1000,height=500');
                         return false;
-                    },
+                    }
                 });
             });
         </script>
