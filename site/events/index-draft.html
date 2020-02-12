@@ -1,0 +1,73 @@
+<!--
+	Electrical, Computer, and Software Engineering Students' Society Website
+	Copyright (c) 2020 Ines Rosito, All Rights Reserved
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			ZOO Events
+		</title>
+		<link rel="stylesheet" type="text/css" href="../website-template.css">
+		<link rel="stylesheet" type="text/css" href="../eventts/events-style.css">
+		
+		<script src="slide-show-gallery.js"></script>
+	</head>
+	
+	<body>
+		<div class="navbar">
+			<li><a class="navbox sponsors" href="../sponsors/index.html"> Sponsor Us </a></li>
+			<li><a class="navbox events" href="../events/index.html"> Events </a></li>
+			<li><a class="navbox council" href="../council/index.html"> Council </a></li>
+			<li><a class="navbox home" href="../../main/index.html"> Home </a></li>
+		</div>			
+
+		<div class="gallery">
+
+			<!-- Full-width Imges -->
+			<div class="gallery-slides">
+				<div class="numbertext"> 1/3 </div>
+				<img src="../events/image1.png" style="width:100%">
+			</div>
+				
+			<div class="gallery-slides">
+				<div class="numbertext"> 2/3 </div>
+				<img src="../events/image2.png" style="width:100%">
+			</div>
+
+			<div class="gallery-slides">
+				<div class="numbertext"> 3/3 </div>
+				<img src="../events/image3.png" style="width:100%">
+			</div>
+
+			<!-- Next and Previous Buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Image Text -->
+			<div class="caption">
+				<p id="caption"></p>
+			</div>
+			
+			<!-- Thumbnails -->
+			<div class = "row">
+				
+				<div class = "column">
+					<img class="demo cursor" src="image1.png" style="width:100%" onclick="currentSlide(1)" alt="Caption 1">
+				</div>
+				
+				<div class = "column">
+					<img class="demo cursor" src="image2.png" style="width:100%" onclick="currentSlide(1)" alt="Caption 2">
+				</div>
+			
+				<div class = "column">
+					<img class="demo cursor" src="image3.png" style="width:100%" onclick="currentSlide(1)" alt="Caption 3">
+				</div>
+			
+			</div>
+		</div>
+
+
+	</body>
+</html>

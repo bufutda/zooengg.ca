@@ -1,0 +1,24 @@
+{
+  "name": "zooengg.ca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "template": "node template.js",
+    "watch": "find site/ | entr -c ./build.sh",
+    "build": "/bin/bash ./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoouofc/zooengg.ca.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoouofc/zooengg.ca/issues"
+  },
+  "homepage": "https://github.com/zoouofc/zooengg.ca#readme",
+  "dependencies": {
+    "ejs": "^3.0.1"
+  }
+}

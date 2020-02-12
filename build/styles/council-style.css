@@ -1,0 +1,73 @@
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 100px;
+	text-align: center;
+	background: #F7F7FF;
+	border-radius: 25px;
+}
+
+.meet-us {
+	position: relative;
+	top: 70px;
+	font-size: 40px;
+	color: #F7F7FF;
+	text-align: center;
+}
+
+.VP1, .VP2 {
+	text-align: center;	
+}
+
+img.mail-pic {
+	width: 50px;
+}
+
+img.profile-pic {
+	  border-top-left-radius: 25px;
+	  border-top-right-radius: 25px;
+}
+
+.VP1 {
+	background: #F7F7FF;
+}
+
+.president.vp-events.first {
+	display: inline-block;
+	position: initial;
+	margin-top: 95px;
+	margin: 0;	
+}
+
+.academic, .external, .internal, .vp-events, .finance {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.card .bio {
+	padding: 5px 5px;
+}
+
+.card h1 {
+	margin-top: 3px;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	/*font-size: 22px;*/
+	color: #32292F;
+}
+
+a:hover {
+	opacity: 0.7;
+}
