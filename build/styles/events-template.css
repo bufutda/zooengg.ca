@@ -1,0 +1,19 @@
+/* Following is for footer setup */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Didact Gothic'
+}
+
+html, body {
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 500px;	/* Height of the footer */
+}
