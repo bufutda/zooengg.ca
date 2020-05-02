@@ -23,9 +23,10 @@
 #footer {
 	background-color: #32292F;
 	position: relative;
-	height: 500px;
-	margin-top: -500px;
+	height: 250px;
+	margin-top: -250px;
 	clear: both;
+	color: #767475;
 }
 
 #footer hr {
@@ -33,11 +34,27 @@
 	margin: auto;
 }
 #footer #address {
-	padding: 15px;
+	padding: 25px 50px 30px;
+}
+
+#footer #social-media {
+	text-align: center;
+	padding: 15px 0px 10px 0px;
 }
 
 #footer #social-media .media-icon {
 	width: 40px;
+	padding: 0px 5px;
+}
+
+#footer #social-media a {
+	text-decoration: none;
+}
+
+#footer #copyright {
+	text-align: center;
+	font-size: 15px;
+	padding: 10px 0px 0px 0px;
 }
 
 /* Following is style guide used on the HEADER */
@@ -54,15 +71,24 @@
 #dropdown nav #zoo-logo {
 	line-height: 55px;
 	float: left;
-	padding: 8px 20px;
-	width: 45px;	/* Image dimensions */
+	padding: 10px 20px;
+	width: 40px;	/* Image dimensions */
+}
+
+#dropdown .vertical-line{
+		width: 2px;
+		background-color: #F7F7FF;
+		height: 55%;
+		float: left;
+		margin: 13px;
 }
 
 /* Following is style guide used on the DROPDOWN */
 #dropdown nav {
 	width: 100%;
 	height: 60px;
-	background-color: #00b1fc;
+	background-color: #32292F;
+	radius: 2px;
 }
 
 #dropdown nav ul {
@@ -78,10 +104,10 @@
 /* Unordered list, list items (anchored) */
 #dropdown nav ul li a {
 	display: block;
-	color: #222;
+	color: #F7F7FF;
 	line-height: 18px;
-	font-size: 18px;
-	padding: 21px 14px;
+	font-size: 15px;
+	padding: 21px 18px;
 	text-decoration: none;
 }
 
@@ -89,7 +115,7 @@
 #dropdown nav ul li ul {
 	display: none;
 	position: absolute;
-	background-color: #00b1fc;
+	background-color: #32292F;
 	paddding: 3px;
 	border-radius: 0px 0px 4px 4px;
 }
@@ -99,7 +125,7 @@
 }
 
 #dropdown nav ul li ul li {
-	width: 180px;
+	width: 200px;
 	border-radius: 4px;
 }
 
@@ -108,6 +134,7 @@
 }
 
 #dropdown nav ul li ul li a:hover {
-	background-color: #f3f3f3;
-	width: 100%;
+	background-color: #767475;
+	width: auto;
+	border-radius: 4px;
 }

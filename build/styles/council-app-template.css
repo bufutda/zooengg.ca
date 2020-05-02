@@ -7,13 +7,22 @@
 
 html, body {
 	height: 100%;
+	width: 90%;
+	margin: auto; /* Centers content */
+}
+
+body {
+	/* background: #E3EAEB; */
+	background: #70ABAF;
+	align-items: center;
 }
 
 #container {
 	min-height: 100%;
+	background: #F7F7FF;
 }
 
 #main {
 	overflow: auto;
-	padding-bottom: 500px;	/* Height of the footer */
+	padding-bottom: 300px;	/* Height of the footer */
 }
