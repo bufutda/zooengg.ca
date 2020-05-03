@@ -1,60 +1,95 @@
 /* Following is style guide used on TO-TOP BUTTON */
 #to-top {
-	  display: none;
-	  position: fixed;
-	  bottom: 20px;
-	  right: 30px;
+		position: fixed;
+	  bottom: 25px;
+	  right: 40px;
 	  z-index: 99;
-	  font-size: 18px;
+	  font-size: 20px;
 	  border: .5px solid;
 	  background-color: #32292F;
 	  color: #F7F7FF;
 	  cursor: pointer;
-	  padding: 15px ;
-	  padding-bottom: 7px;
+	  padding: 10px 15px;
 	  border-radius: 4px;
 }
 
-#to-top:hover {
-	background-color: #555;
-}
+#to-top:hover {background-color: #767475;}
 
 /* Following is style guide used on the FOOTER */
 #footer {
 	background-color: #32292F;
 	position: relative;
-	height: 250px;
-	margin-top: -250px;
+	height: 275px; /* Edit these two values for footer height*/
+	margin-top: -275px;
 	clear: both;
-	color: #221C20;
+	color: #767475;
 }
 
 #footer hr {
 	width: 80%;
 	margin: auto;
-}
-#footer #address {
-	padding: 25px 50px 30px;
+	border: 0.5px solid #767475;
 }
 
+#footer h4 {
+	font-size: 20px;
+	padding: 0 0 5px;
+}
+
+#footer #grid {
+	padding: 25px 75px 25px;
+	display: grid;
+	grid-template-columns: auto auto 35px 150px 150px auto;
+	align-content: center;
+}
+
+#footer #grid a {
+	text-decoration: none;
+	color: #767475;
+}
+
+#footer #grid ul {
+	list-style-type: none;
+	font-size: 15px;
+}
+
+#footer #grid #address {
+		grid-column-start: 2;
+	  grid-column-end: 3;
+}
+
+#footer #grid #site-links1 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+#footer #grid #site-links2 {
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+/* Following is for the SOCIAL MEDIA icons */
 #footer #social-media {
 	text-align: center;
-	padding: 15px 0px 10px 0px;
+	padding: 5px 0px 10px 0px;
+}
+
+#footer #social-media p {
+	color: #F7F7FF;
+	font-kerning: 10px;
 }
 
 #footer #social-media .media-icon {
-	width: 40px;
-	padding: 0px 5px;
+	width: 35px;
+	padding: 15px 15px 0;
 }
 
-#footer #social-media a {
-	text-decoration: none;
-}
+#footer #social-media a {text-decoration: none;}
 
 #footer #copyright {
 	text-align: center;
-	font-size: 15px;
-	padding: 10px 0px 0px 0px;
+	font-size: 13px;
+	padding: 5px 0 0;
 }
 
 /* Following is style guide used on the HEADER */
@@ -75,6 +110,7 @@
 	width: 40px;	/* Image dimensions */
 }
 
+/* Following is style guide used on the NAV DIVIDER */
 #dropdown .vertical-line{
 		width: 2px;
 		background-color: #F7F7FF;
@@ -91,9 +127,9 @@
 	radius: 2px;
 }
 
-#dropdown nav ul {
+/* #dropdown nav ul {
 	float: left;
-}
+} */
 
 #dropdown nav ul li {
 	float: left;
@@ -111,6 +147,12 @@
 	text-decoration: none;
 }
 
+/* Different padding due to dropdown arrow */
+#dropdown nav ul li:nth-child(even) a{padding: 21px 27px 21px 15px}
+
+/* Highlight color when hovering over nav */
+#dropdown nav ul li a:hover {background-color: #767475;}
+
 /* Unordered list, list items, unordered list */
 #dropdown nav ul li ul {
 	display: none;
@@ -120,21 +162,29 @@
 	border-radius: 0px 0px 4px 4px;
 }
 
-#dropdown nav ul li:hover ul {
-	display: block;
-}
+#dropdown nav ul li:hover ul {display: block;}
 
+/* Two different widths as the text in council is smaller than sponsors */
 #dropdown nav ul li ul li {
-	width: 200px;
+	width: 185px;
 	border-radius: 4px;
 }
 
-#dropdown nav ul li ul li a {
-	padding: 10px 14px;
+#dropdown nav ul li ul li.council-dropdown {
+	width: 160px;
+	border-radius: 4px;
 }
+
+#dropdown nav ul li ul li a {padding: 10px 14px;}
 
 #dropdown nav ul li ul li a:hover {
 	background-color: #767475;
 	width: auto;
 	border-radius: 4px;
+}
+
+#dropdown img.arrow {
+	width: 7px;
+  padding: 8px 10px 0px 6px;
+  position: absolute;
 }

@@ -1,10 +1,11 @@
-/* Following is for footer setup */
+/* Following is to remove any existing formats */
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Didact Gothic'
 }
 
+/* Following is to create the CONTAINER box */
 html, body {
 	height: 100%;
 	width: 90%;
@@ -18,17 +19,44 @@ body {
 	align-items: center;
 }
 
-#container {
+/* Following is for the FOOTER*/
+#main--body {
 	min-height: 100%;
 	background: #F7F7FF;
 }
 
-#main {
+#main--footer-setup {
 	overflow: auto;
-	padding-bottom: 300px;	/* Height of the footer */
+	padding-bottom: 275px;	/* Height of the footer */
 }
 
-#main p {
-	padding: 0px 20px;
-	font-size: 25px;
+/* Following is for the SLIDER */
+
+/* Setting up FLEXBOXs */
+.main--content {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.main--content > * { flex: 1 100%; }
+
+.main--content .slideshow {
+	background: tomato;
+	flex: 3 0px;
+	order: 2:
+}
+
+.main--content .about {
+	background: lightgreen;
+	flex: 1 0 0;
+	order: 1;
+	padding: 25px 35px;
+	font-size: 15px;
+}
+
+.main--content .facebook-feed {
+	background: deepskyblue;
+	flex: 1 0 0;
+	order: 3;
 }

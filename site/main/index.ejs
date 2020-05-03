@@ -22,16 +22,37 @@
 
 		<%- include('../templates/header.partial.ejs', {}); %>
 
-	  <div id="container">
-			<div id="main">
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-			
+	  <div id="main--body">
+
+			<div id="main--footer-setup">
+
+				<div class="main--content">
+					<div class="slideshow">
+committed
+					</div>
+					<div class="about">
+						<p>The Electrical, Computer, and Software Engineering Students' Society at the University of Calgary is an organization committed to providing students with a variety of academic and social events to enrich their university experience inside and outside of classes. We strive to provide communication between the University of Calgary faculty and electrical, computer, and software engineering students. Additionally, we work to represent the opinions of students to other universities, and the community at large.</p></br>
+
+						<p>In addition being referred to as the Electrical, Computer, and Software Engineering Students Society, our organization has also been referred to as ZOO for over two decades.</p></br>
+
+						<p>Any inquiries for the department organization of Electrical, Computer, and Software Engineering should be directed to the relevant department employee. A list of contacts for the department can be found here.</p></br>
+
+						<p>Any inquiries for ZOO should either be voiced in-person at the homeroom, located in ENA 106, or via email to president@zooengg.ca. Questions or comments regarding this site should be directed via email to webmaster@zooengg.ca.</p>
+					</div>
+					<div class="facebook-feed">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzooengg&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+
+					<!-- Flexbox didn't work without the insertion of <p> -->
+					<p></p>
+
+				</div>
 			</div>
 		</div>
 
 		<!-- Scripts -->
-		<script src="../scripts/to-top.js"></script>
+		<script src="/scripts/to-top.js"></script>
+		<script src="/scripts/slideshow.js"></script>
 
 	  <%- include('../templates/footer.partial.ejs', {}); %>
 	</body>
