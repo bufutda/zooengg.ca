@@ -39,7 +39,7 @@
 #footer #grid {
 	padding: 25px 75px 25px;
 	display: grid;
-	grid-template-columns: auto auto 35px 150px 150px auto;
+	grid-template-columns: auto auto 35px 150px 120px auto;
 	align-content: center;
 }
 

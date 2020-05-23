@@ -1,3 +1,13 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+		- Fix the spacing between and above/below cards
+		- Choose a new header
+		- Clean up file
+		- Fix to-top
+		- Some mobile devices have extra space at the bottom
+		- Zoom levels have odd spacing between cards
+*/
+
 /* Following is for footer setup */
 * {
 	margin: 0;
@@ -13,16 +23,63 @@ html, body {
 
 body {
 	/* background: #E3EAEB; */
-	background: #70ABAF;
+	/* background: #70ABAF; */
+	/* background: #F5F5F5; */
+	background: #F1F1F1;
 	align-items: center;
 }
 
-#container {
+/* Following is for the FOOTER*/
+#exec--body {
 	min-height: 100%;
 	background: #F7F7FF;
 }
 
-#main {
+#exec--footer-setup {
 	overflow: auto;
-	padding-bottom: 300px;	/* Height of the footer */
+	padding-bottom: 275px;	/* Height of the footer */
+}
+
+#exec-content {
+	align-items: center;
+	margin: auto;
+}
+
+#exec--content #exec-title {
+    font-family: 'Ubuntu', normal;
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0;
+}
+
+/* Following sets up the executives bio cards */
+#exec--content #profile-cards{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 50px;
+	/* padding: 0 0 7%; */
+}
+
+#exec--content .profile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 275px;
+	max-height: 500px;
+	margin: auto auto 35px;
+	text-align: center;
+	background: #F7F7FF;
+	border-radius: 25px;
+}
+
+/* #exec--content .profile h1 { font-size: 7%; } */
+
+#exec--content .profile .bio {
+	padding: 5px 20px 0;
+	font-size: 13px;
+}
+
+#exec--content img.mail-pic {width: 45px;}
+
+#exec--content img.profile-pic {
+	  border-top-left-radius: 25px;
+	  border-top-right-radius: 25px;
 }

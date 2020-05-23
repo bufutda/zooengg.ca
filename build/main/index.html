@@ -13,6 +13,7 @@
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="../styles/website-template.css">
+		<link rel="stylesheet" type="text/css" href="../styles/slider-template.css">
 		<link rel="stylesheet" type="text/css" href="../styles/main-template.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
@@ -52,10 +53,44 @@
 
 			<div id="main--footer-setup">
 
-				<div class="main--content">
-					<div class="slideshow">
-committed
-					</div>
+				<div id="main--content">
+					<section class="carousel" aria-label="Gallery">
+				  <ol class="carousel__viewport">
+				    <li id="carousel__slide1"
+				        tabindex="0"
+				        class="carousel__slide">
+				      <div class="carousel__snapper">
+				        <a href="#carousel__slide4"
+				           class="carousel__prev">Go to last slide</a>
+				        <a href="#carousel__slide2"
+				           class="carousel__next">Go to next slide</a>
+				      </div>
+				    </li>
+				    <li id="carousel__slide2"
+				        tabindex="0"
+				        class="carousel__slide">
+				      <div class="carousel__snapper"></div>
+				      <a href="#carousel__slide1"
+				         class="carousel__prev">Go to previous slide</a>
+				      <a href="#carousel__slide3"
+				         class="carousel__next">Go to next slide</a>
+				    </li>
+				  </ol>
+
+					<!-- Circles -->
+				  <aside class="carousel__navigation">
+				    <ol class="carousel__navigation-list">
+				      <li class="carousel__navigation-item">
+				        <a href="#carousel__slide1"
+				           class="carousel__navigation-button">Go to slide 1</a>
+				      </li>
+				      <li class="carousel__navigation-item">
+				        <a href="#carousel__slide2"
+				           class="carousel__navigation-button">Go to slide 2</a>
+				      </li>
+				    </ol>
+				  </aside>
+				</section>
 					<div class="about">
 						<p>The Electrical, Computer, and Software Engineering Students' Society at the University of Calgary is an organization committed to providing students with a variety of academic and social events to enrich their university experience inside and outside of classes. We strive to provide communication between the University of Calgary faculty and electrical, computer, and software engineering students. Additionally, we work to represent the opinions of students to other universities, and the community at large.</p></br>
 
@@ -76,9 +111,6 @@ committed
 			</div>
 		</div>
 
-		<!-- Scripts -->
-		<script src="/scripts/to-top.js"></script>
-		<script src="/scripts/slideshow.js"></script>
 
 	  	<button onclick="topFunction()" id="to-top" title="Go to top">^</button>
 
@@ -127,6 +159,10 @@ committed
 		</div>
 
 	</div>
+
+
+		<!-- Scripts -->
+		<script src="/scripts/to-top.js"></script>
 
 	</body>
 </html>
