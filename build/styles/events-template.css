@@ -13,8 +13,9 @@ html, body {
 
 body {
 	/* background: #E3EAEB; */
-	background: #70ABAF;
-	align-items: center;
+	/* background: #70ABAF; */
+	background: #e7e7ea;
+		align-items: center;
 }
 
 #container {

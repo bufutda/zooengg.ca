@@ -1,3 +1,8 @@
+/* TODO
+		- Update footer links to jump to specific sections of pages if necessary (i.e. About Us)
+		- Cleanup code
+*/
+
 /* Following is style guide used on TO-TOP BUTTON */
 #to-top {
 		position: fixed;
@@ -13,6 +18,12 @@
 	  border-radius: 4px;
 }
 
+	/* Removes box that outlines object on click */
+#to-top:active, #to-top:focus {
+  outline: 0;
+	-moz-outline-style: none;
+}
+
 #to-top:hover {background-color: #767475;}
 
 /* Following is style guide used on the FOOTER */
@@ -23,6 +34,7 @@
 	margin-top: -275px;
 	clear: both;
 	color: #767475;
+	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 #footer hr {
@@ -100,9 +112,12 @@
 	padding: 15px;
 	background-color: #3AAED8;
 	color: #F7F7FF;
+	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 /* Following is style guide used on the LOGO */
+/* #dropdown { box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); } */
+
 #dropdown nav #zoo-logo {
 	line-height: 55px;
 	float: left;
@@ -160,6 +175,7 @@
 	background-color: #32292F;
 	paddding: 3px;
 	border-radius: 0px 0px 4px 4px;
+	z-index: 2;
 }
 
 #dropdown nav ul li:hover ul {display: block;}

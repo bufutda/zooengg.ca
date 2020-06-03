@@ -15,7 +15,7 @@ html, body {
 body {
 	/* background: #E3EAEB; */
 	/* background: #70ABAF; */
-	background: #f5f5f5;
+	background: #e7e7ea;
 	align-items: center;
 }
 
@@ -42,21 +42,124 @@ body {
 #main--content > * { flex: 1 100%; }
 
 #main--content .slideshow {
-	background: tomato;
 	flex: 3 0px;
 	order: 2:
 }
 
-#main--content .about {
-	background: lightgreen;
-	flex: 1 0 0;
-	order: 1;
-	padding: 25px 35px;
+
+#main--content #about {
+	/* flex: 1 0 0;
+	order: 1; */
+	/* padding: 25px 50px; */
+	padding: 40px 15% 10%;
 	font-size: 15px;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
-#main--content .facebook-feed {
-	background: deepskyblue;
-	flex: 1 0 0;
-	order: 3;
+#main--content #about #main-title {
+	color: #32292F;
+	font-family: 'Ubuntu', normal;
+	text-align: center;
+	font-size: 35px;
+	padding: 5px 0 30px;
+	/* background-image: linear-gradient(#70ABAF, #F7F7FF); */
 }
+
+#main--content #about hr {
+	margin: 25px 0;
+}
+
+#main--content #about #about--constitution {
+	text-align: center;
+}
+
+/* #main--content .facebook-feed {
+	background: #dcdce0;
+	flex: 0 0 0;
+	order: 1;
+} */
+
+/* Setting up the flickity slideshow */
+.carousel-cell {
+  width: 70%;
+  height: 150px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+	height: 500px;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* CSS is all at the link, so !important is needed to change it */
+	/* Uploaded pictures should have the height of 500px */
+.flickity-viewport {
+	height: 500px !important;
+	background: #F7F7FF;
+	padding: 25px 0 0 0;
+}
+.flickity-page-dots {bottom: 25px !important;}
+.flickity-page-dots .dot.is-selected { background: #F7F7FF !important; }
+.flickity-page-dots .dot {
+	opacity: 0.45;
+	background: #F7F7FF !important;
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow { fill: #32292F;}
+.flickity-prev-next-button.no-svg { color: white; }
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled { display: none; }

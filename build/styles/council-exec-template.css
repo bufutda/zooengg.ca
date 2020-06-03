@@ -25,7 +25,8 @@ body {
 	/* background: #E3EAEB; */
 	/* background: #70ABAF; */
 	/* background: #F5F5F5; */
-	background: #F1F1F1;
+	/* background: #F1F1F1; */
+		background: #e7e7ea;
 	align-items: center;
 }
 
@@ -33,23 +34,28 @@ body {
 #exec--body {
 	min-height: 100%;
 	background: #F7F7FF;
+		/* Shadow does not go the complete length of the content */
+	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 #exec--footer-setup {
 	overflow: auto;
 	padding-bottom: 275px;	/* Height of the footer */
+	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
-#exec-content {
+/* #exec--content {
 	align-items: center;
 	margin: auto;
-}
+} */
 
 #exec--content #exec-title {
-    font-family: 'Ubuntu', normal;
+		color: #32292F;
+		font-family: 'Ubuntu', normal;
     text-align: center;
     font-size: 35px;
     padding: 50px 0;
+		/* background-image: linear-gradient(#70ABAF, #F7F7FF); */
 }
 
 /* Following sets up the executives bio cards */
@@ -63,7 +69,7 @@ body {
 #exec--content .profile {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 275px;
-	max-height: 500px;
+	/* max-height: 500px; */
 	margin: auto auto 35px;
 	text-align: center;
 	background: #F7F7FF;
@@ -71,7 +77,6 @@ body {
 }
 
 /* #exec--content .profile h1 { font-size: 7%; } */
-
 #exec--content .profile .bio {
 	padding: 5px 20px 0;
 	font-size: 13px;
