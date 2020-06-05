@@ -6,16 +6,15 @@
 -->
 	<head>
 		<title>
-			Become a Sponsor
+			ZOO Meaning
 		</title>
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="/styles/website-template.css">
-		<link rel="stylesheet" type="text/css" href="../../styles/sponsor-form-template.css">
+		<link rel="stylesheet" type="text/css" href="../styles/zoo-template.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
-		<!-- Scripts -->
-		<script src="/scripts/to-top.js"></script>
 	</head>
 
   <body>
@@ -23,13 +22,47 @@
 		<%- include('../templates/header.partial.ejs', {}); %>
 
 
-	  <div id="container">
-			<div id="main">
-				Meaning of ZOO -
+	  <div id="zoo--body">
+			<div id="zoo--footer-setup">
+				<div id="zoo--content">
+					<h2 id="zoo-title">Meaning of ZOO</h2>
+					<p id="zoo-description">The meaning behind ZOO has been a long-standing question amongst many people, Council members included. Many have saught after the meaning, yet no story has been considered the absolute truth. Despite this fact, there is one story in particular that stands out, one that is commonly used by the Society when asked the age-old question. This story, provided by a ZOO Alumni, was written as follows:</p><br>
+
+					<em><p class="zoo-story">As of today, we may have become even greater goofballs than we were in 1974. But that was the year where we started. Some would say it was a cold winter day, others would say it was quite sunny. But we do know that there was a group of students who wanted to prove a point to their professor Dr. R. B. S. Jr. This, as of what I have been told, was a professor who would go an entire class without looking at his students and just writing on the blackboard. So this day, in early 1974, an entire class of 4th year Electrical Engineering students decided to skip his class and see if their prof would even notice.</p><br>
+
+					<p class="zoo-story">The group stuffed all of their jackets full, added some fake faces, and skipped out to Dinny&#39;s Den. A few of them hid in the class to see the reaction, but it nearly took half the class. Once the prof finally realized his class was inordinately quiet, he finally turns around and realizes that he is being pranked. He just exclaims that the class is a ZOO, and walks out.</p></em><br>
+
+					<hr>
+
+					<b><p style="padding: 0 0 35px">The name stuck, and from 1974 until forever, we have been, and will be, recognized as ZOO.</p></b>
+					<div id="zoo-pictures">
+						<!-- thumbnail image wrapped in a link -->
+						<a href="#img1">
+						  <img src="/zoo/assets/meaningOfZOO1.png" class="thumbnail">
+						</a>
+
+						<a href="#img2">
+							<img src="/zoo/assets/meaningOfZOO2.png" class="thumbnail">
+						</a>
+
+						<!-- lightbox container hidden with CSS -->
+						<a href="#_" class="lightbox" id="img1">
+						  <img src="/zoo/assets/meaningOfZOO1.png">
+						</a>
+
+						<a href="#_" class="lightbox" id="img2">
+							<img src="/zoo/assets/meaningOfZOO2.png">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
-	  <%- include('../templates/footer.partial.ejs', {}); %>
+		<%- include('../templates/footer.partial.ejs', {}); %>
+
+		<!-- Scripts -->
+		<script src="/scripts/to-top.js"></script>
+		<script src="/scripts/image-modal.js"></script>
 
 	</body>
 </html>

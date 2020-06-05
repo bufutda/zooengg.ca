@@ -14,8 +14,6 @@
 		<link rel="stylesheet" type="text/css" href="../../styles/council-app-template.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
-		<!-- Scripts -->
-		<script src="../../scripts/to-top.js"></script>
 	</head>
 
   <body>
@@ -49,9 +47,38 @@
 
 
 
-	  <div id="container">
-			<div id="main">
-				APPLICATION
+		<div id="app--body">
+			<div id="app--footer-setup">
+				<div id="app--content">
+					<div id="app-picture">
+						APPLICATION
+
+					</div>
+					<div id="app-form">
+						<form action="">
+
+						    <label for="fname">First Name</label>
+						    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+						    <label for="lname">Last Name</label>
+						    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+						    <label for="country">Country</label>
+						    <select id="country" name="country">
+						      <option value="australia">Australia</option>
+						      <option value="canada">Canada</option>
+						      <option value="usa">USA</option>
+						    </select>
+
+						    <label for="subject">Subject</label>
+						    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+						    <input type="submit" value="Submit">
+
+						  </form>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -103,6 +130,9 @@
 
 	</div>
 
+
+		<!-- Scripts -->
+		<script src="../../scripts/to-top.js"></script>
 
 	</body>
 </html>
