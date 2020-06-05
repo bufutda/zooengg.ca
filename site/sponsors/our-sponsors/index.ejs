@@ -10,6 +10,7 @@
 		</title>
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="../../styles/website-template.css">
 		<link rel="stylesheet" type="text/css" href="../../styles/sponsors-template.css">
 		<!-- Favicon -->
@@ -17,15 +18,32 @@
 	</head>
 
   <body>
-
 		<%- include('../../templates/header.partial.ejs', {}); %>
 
-
-	  <div id="container">
-			<div id="main">
-				OUR SPONSORS
+		<div id="sponsor--body">
+			<div id="sponsor--footer-setup">
+				<div id="sponsor--content">
+					<div id="sponsor-thanks">
+						<img src="/sponsors/assets/thank-you.svg">
+						<h1 id="centered">2020 - 2021</h1>
+						<hr id="hr-left"> <hr id="hr-right">
+					</div>
+					<div id="sponsor-message">
+						<p>The Electrical, Computer, and Software Engineering Students&#39; Society would like to thank our Sponsors for their donations during the 2020-2021 academic year. Their support enables us to reach our mission of enriching the student-body experience to ensure that they are fully prepared for their post-secondary careers. As such, this Society greatly appreciates all of their genoristy, along with their intent to secure the success of the leaders of tomorrow. </p><br>
+						<b><p style="text-align:center">As it currently stands, we are looking for sponsors for the school year! If you're interested, check out our "<a href="/sponsors/sponsor-forms/index.html">Become a Sponsor</a>" page for more information.</p></b>
+					</div>
+					<div id="sponsor-logos">
+						<img class="gold" src="/sponsors/assets/sponsor-placeholder.png">
+						<img class="silver" src="/sponsors/assets/sponsor-placeholder.png">
+						<img class="silver" src="/sponsors/assets/sponsor-placeholder.png">
+						<img class="bronze" src="/sponsors/assets/sponsor-placeholder.png">
+						<img class="bronze" src="/sponsors/assets/sponsor-placeholder.png">
+						<img class="bronze" src="/sponsors/assets/sponsor-placeholder.png">
+					</div>
+				</div>
 			</div>
 		</div>
+
 
 	  <%- include('../../templates/footer.partial.ejs', {}); %>
 

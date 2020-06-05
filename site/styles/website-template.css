@@ -46,6 +46,7 @@
 #footer h4 {
 	font-size: 20px;
 	padding: 0 0 5px;
+	color: #767475;
 }
 
 #footer #grid {
@@ -54,6 +55,8 @@
 	grid-template-columns: auto auto 35px 150px 120px auto;
 	align-content: center;
 }
+
+#footer #grid p {color: #767475;}
 
 #footer #grid a {
 	text-decoration: none;
@@ -102,6 +105,7 @@
 	text-align: center;
 	font-size: 13px;
 	padding: 5px 0 0;
+	color: #767475;
 }
 
 /* Following is style guide used on the HEADER */

@@ -2,7 +2,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Didact Gothic'
+	font-family: 'Didact Gothic';
+	color: #32292F;
 }
 
 /* Following is to create the CONTAINER box */
@@ -58,7 +59,7 @@ body {
 }
 
 #main--content #about #main-title {
-	color: #32292F;
+	/* color: #32292F; */
 	font-family: 'Ubuntu', normal;
 	text-align: center;
 	font-size: 35px;

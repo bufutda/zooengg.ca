@@ -8,11 +8,12 @@
 		- Zoom levels have odd spacing between cards
 */
 
-/* Following is for footer setup */
+/* Following is to remove any existing formats */
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Didact Gothic'
+	font-family: 'Didact Gothic';
+	color: #32292F;
 }
 
 html, body {
@@ -26,7 +27,7 @@ body {
 	/* background: #70ABAF; */
 	/* background: #F5F5F5; */
 	/* background: #F1F1F1; */
-		background: #e7e7ea;
+	background: #e7e7ea;
 	align-items: center;
 }
 
@@ -51,7 +52,7 @@ body {
 
 /* The following is to setup the actual page content*/
 #exec--content #exec-title {
-		color: #32292F;
+		/* color: #32292F; */
 		font-family: 'Ubuntu', normal;
     text-align: center;
     font-size: 35px;
