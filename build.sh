@@ -22,7 +22,7 @@ build_orig() {
 		done < <(find "./$dir" | awk "NR != 1 { print; }")
 	done
 
-	cp ./website-template.css build/website-template.css
+	cp ./website-style.css build/website-style.css
 
 	cd "$CWD"
 }

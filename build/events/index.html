@@ -10,8 +10,9 @@
 		</title>
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="../styles/website-template.css">
-		<link rel="stylesheet" type="text/css" href="../styles/events-template.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="../styles/website-style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/events-style.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
 	</head>
@@ -47,9 +48,42 @@
 
 
 
-	  <div id="container">
-			<div id="main">
-				EVENTS
+		<div id="events--body">
+			<div id="events--footer-setup">
+				<div id="events--content">
+					<div id="past-events">
+						<h1> Past Events </h1>
+							<div class="sidebar">
+								<ul>
+									<li class="active" data-filter="*"> All</li>
+									<li data-filter=".year2019-2020"> 2019-2020</li>
+									<li data-filter=".year2018-2019"> 2018-2019</li>
+									<li data-filter=".year2017-2018"> 2017-2018</li>
+									<li data-filter=".year2016-2017"> 2016-2017</li>
+									<li data-filter=".year2015-2016"> 2015-2016</li>
+								</ul>
+							</div>
+							<div class="poster-grid">
+								<div class="item year2019-2020">
+									<img src="/events/assets/techElecNight-2020.png" alt="Technical Elective Night hosted in 2020">
+								</div>
+								<div class="item year2018-2019">
+									<img src="/events/assets/techElecNight-2019.png" alt="Technical Elective Night hosted in 2019">
+								</div>
+								<div class="item year2017-2018">
+									<img src="/events/assets/techElecNight-2018.png" alt="Technical Elective Night hosted in 2018">
+								</div>
+								<div class="item year2016-2017">
+									<img src="/events/assets/techElecNight-2017.png" alt="Technical Elective Night hosted in 2017">
+								</div>
+								<div class="item year2015-2016">
+									<img src="/events/assets/techElecNight-2016.png" alt="Technical Elective Night hosted in 2016">
+								</div>
+							</div>
+
+					</div>
+
+				</div>
 			</div>
 		</div>
 
@@ -67,7 +101,7 @@
 				<div id="site-links1">
 					<h4>Site Links<br></h4>
 					<ul>
-						<li><a href="/main/index.html">   About Us</a></li>
+						<li><a href="/main/index.html#main-title">   About Us</a></li>
 						<li><a href="/council/execs/index.html">   Executive Council</a></li>
 						<li><a href="/council/commissioners/index.html">   Commissioners</a></li>
 						<li><a href="/council/applications/index.html">   Join the Team</a></li>
@@ -104,6 +138,7 @@
 
 		<!-- Scripts -->
 		<script src="../scripts/to-top.js"></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	</body>
 </html>

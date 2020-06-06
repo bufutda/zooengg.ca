@@ -10,8 +10,9 @@
 		</title>
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="../../styles/website-template.css">
-		<link rel="stylesheet" type="text/css" href="../../styles/council-app-template.css">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="../../styles/website-style.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/council-app-style.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
 	</head>
@@ -46,36 +47,62 @@
 </div>
 
 
-
 		<div id="app--body">
 			<div id="app--footer-setup">
 				<div id="app--content">
-					<div id="app-picture">
-						APPLICATION
+					<div id="join-us">
+						<img class="profile-pic" src="/council/assets/join-us.svg">
+						<h1 id="right">Join the Team!</h1>
 
+						<p class="right-text">We are accepting applications for the <b>2020-2021</b> academic year! There are various commissioner roles avaiable, so pick the one right for you.</p>
+						<p class="right-text" id="rt2"><b>Questions?</b> Email execs@zooengg.ca, otherwise download the form below and submit your application to join today!</p>
+
+						<a id="button" href="/council/assets/CommissionerForm.pdf" target="_blank">Download Form</a>
 					</div>
 					<div id="app-form">
-						<form action="">
+						<h1>Send Us Your Application!</h1>
+						<form id="grid" action="">
+							<label id="name" for="name">Name *</label>
+					    <label id="fname" for="fname">First Name</label>
+					    <input id="fname-box" type="text" name="firstname" placeholder="First Name">
 
-						    <label for="fname">First Name</label>
-						    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+					    <label id="lname" for="lname">Last Name</label>
+					    <input id="lname-box" type="text" name="lastname" placeholder="Last Name">
 
-						    <label for="lname">Last Name</label>
-						    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+							<label id="email" for="email">UCalgary Email *</label>
+							<input id="email-box" type="text" name="email" placeholder="UCalgary Email">
 
-						    <label for="country">Country</label>
-						    <select id="country" name="country">
-						      <option value="australia">Australia</option>
-						      <option value="canada">Canada</option>
-						      <option value="usa">USA</option>
-						    </select>
+					    <label id="degree" for="degree">Degree *</label>
+					    <select id="degree-select" name="degree">
+								<option selected="selected" disabled>Please Select from Dropdown</option>
+					      <option value="computer">Computer</option>
+					      <option value="electrical">Electrical</option>
+					      <option value="software">Software</option>
+								<option disabled>------------</option>
+								<option value="chemical">Chemical</option>
+								<option value="civil">Civil</option>
+								<option value="geomatics">Geomatics</option>
+								<option value="mechanical">Mechanical</option>
+								<option value="oil">Oil & Gas</option>
+					    </select>
 
-						    <label for="subject">Subject</label>
-						    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+							<label id="year" for="year">Year *</label>
+					    <select id="year-select" name="year">
+								<option selected="selected" disabled>Please Select from Dropdown</option>
+					      <option value="year2">2nd Year</option>
+					      <option value="year3">3rd Year</option>
+					      <option value="year4">4th Year</option>
+								<option value="year5">5th Year and Above</option>
+					    </select>
 
-						    <input type="submit" value="Submit">
+							<label id="file" for="file">Upload your Commissioner Application *</label>
+							<input id="file-select" accept="application/pdf" type="file" name="file">
 
-						  </form>
+					    <label id="comments" for="comment">Additional Comments</label>
+					    <textarea id="comments-box" name="comment" placeholder="Additional comments, if any..."></textarea>
+
+					    <input id="submit" type="submit" value="Submit">
+
 						</form>
 					</div>
 				</div>
@@ -96,7 +123,7 @@
 				<div id="site-links1">
 					<h4>Site Links<br></h4>
 					<ul>
-						<li><a href="/main/index.html">   About Us</a></li>
+						<li><a href="/main/index.html#main-title">   About Us</a></li>
 						<li><a href="/council/execs/index.html">   Executive Council</a></li>
 						<li><a href="/council/commissioners/index.html">   Commissioners</a></li>
 						<li><a href="/council/applications/index.html">   Join the Team</a></li>

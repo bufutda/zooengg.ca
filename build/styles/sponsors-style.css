@@ -96,7 +96,7 @@ body {
 
 /* Following is to format the sponsors logo*/
 #sponsor--content #sponsor-logos {
-	padding: 0px 10%;
+	padding: 25px 10% 20px;
 	text-align: center;
 }
 #sponsor--content #sponsor-logos img {padding: 15px 20px;}

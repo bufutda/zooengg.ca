@@ -1,0 +1,79 @@
+/* Following is to remove any existing formats */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Didact Gothic';
+	color: #32292F;
+	/* force scrollbar, prevents initial gap */
+}
+
+html { overflow-y: scroll; }
+
+html, body {
+	height: 100%;
+	width: 90%;
+	margin: auto; /* Centers content */
+}
+
+body {
+	/* background: #E3EAEB; */
+	/* background: #70ABAF; */
+	background: #e7e7ea;
+		align-items: center;
+}
+
+#events--body {
+	min-height: 100%;
+	background: #F7F7FF;
+}
+
+#events--footer-setup {
+	overflow: auto;
+	padding-bottom: 300px;	/* Height of the footer */
+}
+
+/* Following is to set up the isotope containing past event info*/
+#events--content #past-events h1 {
+	font-family: 'Ubuntu', normal;
+	text-align: center;
+
+	padding: 35px 0 20px;
+}
+
+#events--content #past-events .sidebar {
+	text-align: center;
+}
+
+#events--content #past-events .sidebar ul li {
+	display: inline-block;
+	margin: 0;
+	list-style: none;
+	padding: 10px 15px;
+	border: 1px solid red;
+	cursor: pointer;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#events--content #past-events .sidebar ul li:hover {
+	background: red;
+	color: #ffff;
+}
+
+#events--content #past-events .poster-grid {
+	width: 100%;
+}
+
+#events--content #past-events .poster-grid .item {
+	width: 300px;
+	float: left;
+	margin: 0 0 10px;
+}
+
+#events--content #past-events .poster-grid .item img {
+	width: 30%;
+}
