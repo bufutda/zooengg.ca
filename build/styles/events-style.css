@@ -58,6 +58,7 @@ body {
 #events--content #additional-event-text {
 	text-align: center;
 	padding: 0 225px 25px;
+	font-size: 18px;
 }
 
 #events--content #past-events h1 {
@@ -72,20 +73,32 @@ body {
 /* Creating grids within the description blocks */
 #events--content #event-cards .event {display: grid;}
 
-#events--content #event-cards .left-image {
-	height: 300px;
-	grid-template-columns:  15px 30% 30px auto 15px;
+/* #events--content #event-cards #card-1.left-image-card {;} */
+
+#events--content #event-cards .left-image-card {
+	/* height: 300px; */
+	/* height: 195px; */
+	grid-template-columns:  15px 30% 15px auto 15px;
  	grid-template-rows:  15px 40px auto 15px;
 }
 
-#events--content #event-cards .right-image {
-	height: 300px;
-	grid-template-columns:  15px auto 30px 30% 15px;
+#events--content #event-cards #card-5.left-image-card {
+	/* height: 300px; */
+	/* height: 195px; */
+	grid-template-columns:  15px 30% 15px auto 15px;
+ 	grid-template-rows:  15px 40px fit-content 15px;
+}
+
+
+#events--content #event-cards .right-image-card {
+	/* height: 300px; */
+	/* height: 195px; */
+	grid-template-columns:  15px auto 15px 30% 15px;
  	grid-template-rows:  15px 35px auto 15px;
-	margin: auto;
+	margin: 0 auto 40px;
 }
 
-#events--content #event-cards .left-image h2 {
+#events--content #event-cards .left-image-card h2 {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 2;
@@ -93,14 +106,14 @@ body {
 }
 
 
-#events--content #event-cards .right-image h2 {
+#events--content #event-cards .right-image-card h2 {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
 
-#events--content #event-cards .left-image .description {
+#events--content #event-cards .left-image-card .description {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 3;
@@ -109,13 +122,53 @@ body {
 }
 
 
-#events--content #event-cards .right-image .description {
+#events--content #event-cards .right-image-card .description {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 4;
 	text-align: justify;
 }
+
+#events--content #event-cards .left-image-card .left-image {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+#events--content #event-cards .right-image-card .right-image {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+#events--content #event-cards img {
+  object-fit: cover;
+  width: 65%;
+  max-height: 100%;
+}
+/* #events--content #event-cards .left-image-card #left-1 {
+	background: url('/events/assets/lan-party.svg');
+	background-size: cover;
+}
+
+#events--content #event-cards .left-image-card #left-2 {
+	background: url('/events/assets/lan-party.svg');
+	background-size: cover;
+} */
+
+
+/* #events--content #event-cards .right-image-card #right-1 {
+	background: url('/events/assets/lan-party.svg');
+	background-size: cover;
+}
+
+#events--content #event-cards .right-image-card #right-2 {
+	background: url('/events/assets/lan-party.svg');
+	background-size: cover;
+} */
 
 
 /* Setting up the flickity slideshow */
