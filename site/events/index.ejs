@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <!--
 	Electrical, Computer, and Software Engineering Students' Society Website
-	Copyright (c) 2020 Ines Rosito, All Rights Reserved
+	Website Created in 2020 by Ines Rosito.
 -->
 	<head>
 		<title>
@@ -13,6 +13,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="../styles/website-style.css">
 		<link rel="stylesheet" type="text/css" href="../styles/events-style.css">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
 	</head>
@@ -25,38 +26,103 @@
 		<div id="events--body">
 			<div id="events--footer-setup">
 				<div id="events--content">
+					<div id="event-description">
+						<h1> Our Events </h1>
+						<p id="additional-event-text">This year the Society is working harder than ever before to bring new events, along with some other classics, to the student population.</p>
+
+						<div id="event-cards">
+							<div class="left-image event">
+								<h2> LAN Parties </h2>
+								<p class="description"> LAN Parties are a favourite amongst students in the Department. Mental health is important and this event serves an opportunity for students to relax for a night of games during the typically hectic midterm season.  </p>
+							</div>
+
+							<div class="right-image event">
+								<h2> Hack-a-thons </h2>
+								<p class="description"> My name is Antoine and I'm going into my final year of software engineering. I took on the role of president this year because I want to help improve the experience for all students in ZOO in the form of new events and new opportunities. I look forward to collaborating with all kinds of people to achieve this goal. </p>
+							</div>
+
+							<div class="left-image event">
+								<h2> Canadian University Software Engineering Conference </h2>
+								<p class="description"> This year the Society is working to coordinate a trip to CUSEC.<br><br>
+								<em>	CUSEC is an annual software engineering conference organized for students by students. It was founded in 2002 by a small team of tech enthusiasts on a mission to educate and expose students to a diverse range of areas in software engineering and computer science. The conference enables attendees to discover knowledgeable speakers, connect with sponsoring companies, and make lifelong friends, all in a safe and comfortable space.</em></p>
+							</div>
+
+							<div class="right-image event">
+								<h2> Technical Elective Night </h2>
+								<p class="description"> My name is Antoine and I'm going into my final year of software engineering. I took on the role of president this year because I want to help improve the experience for all students in ZOO in the form of new events and new opportunities. I look forward to collaborating with all kinds of people to achieve this goal. </p>
+							</div>
+						</div>
+					</div>
 					<div id="past-events">
 						<h1> Past Events </h1>
-							<div class="sidebar">
-								<ul>
-									<li class="active" data-filter="*"> All</li>
-									<li data-filter=".year2019-2020"> 2019-2020</li>
-									<li data-filter=".year2018-2019"> 2018-2019</li>
-									<li data-filter=".year2017-2018"> 2017-2018</li>
-									<li data-filter=".year2016-2017"> 2016-2017</li>
-									<li data-filter=".year2015-2016"> 2015-2016</li>
-								</ul>
-							</div>
-							<div class="poster-grid">
-								<div class="item year2019-2020">
-									<img src="/events/assets/techElecNight-2020.png" alt="Technical Elective Night hosted in 2020">
-								</div>
-								<div class="item year2018-2019">
-									<img src="/events/assets/techElecNight-2019.png" alt="Technical Elective Night hosted in 2019">
-								</div>
-								<div class="item year2017-2018">
-									<img src="/events/assets/techElecNight-2018.png" alt="Technical Elective Night hosted in 2018">
-								</div>
-								<div class="item year2016-2017">
-									<img src="/events/assets/techElecNight-2017.png" alt="Technical Elective Night hosted in 2017">
-								</div>
-								<div class="item year2015-2016">
-									<img src="/events/assets/techElecNight-2016.png" alt="Technical Elective Night hosted in 2016">
-								</div>
-							</div>
 
+						<div class="carousel carousel-main" data-flickity='{ "resize": true, "wrapAround": true, "imagesLoaded": true, "pageDots": false }'>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2020.png" alt="LAN Party hosted in Winter 2020"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2020.png" alt="Technical Elective Night hosted in 2020"></div>
+							<div class="carousel-cell"><img src="/events/assets/keyClue-recruit2019-1.png" alt="Keyclue Recruitment night hosted in Fall 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/keyClue-recruit2019-2.png" alt="Keyclue Recruitment night hosted in Fall 2019 (Solutions)"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2019.png" alt="LAN Party hosted in Fall 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/hoodie-2019.png" alt="Hoodie orders for Fall 2019"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2019.png" alt="LAN Party hosted in Winter 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2019.png" alt="Technical Elective Night hosted in 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/agm2019.png" alt="AGM hosted in Winter 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/movieNight-2019.png" alt="Movie Night hosted in Winter 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/skiTrip-2019.png" alt="Sky Trip hosted in Winter 2019"></div>
+							<div class="carousel-cell"><img src="/events/assets/foodDrive-2018.png" alt="Food drive for Fall 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/movieNight-2018.png" alt="Movie Night hosted in Fall 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2018.png" alt="LAN Party hosted in Fall 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/byElection-2018.png" alt="By-Election hosted in Fall 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/hoodie-2018.png" alt="Hoodie orders for Fall 2018"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2018.png" alt="LAN Party hosted in Winter 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2018.png" alt="Technical Elective Night hosted in 2018"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2017.png" alt="LAN Party hosted in Fall 2017"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2017.png" alt="Technical Elective Night hosted in 2017"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2017.png" alt="LAN Party hosted in Winter 2017"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2016.png" alt="Technical Elective Night hosted in 2016"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2016.png" alt="LAN Party hosted in Winter 2016"></div>
+							<div class="carousel-cell"><img src="/events/assets/profMixer-2016.png" alt="Prof Mixer event hosted in 2016"></div>
+							<div class="carousel-cell"><img src="/events/assets/ranchmans-2016.png" alt="Shenanigans event hosted in 2016"></div>
+							<div class="carousel-cell"><img src="/events/assets/googleSocial-2016.png" alt="Google Breakfast Social event hosted in 2016"></div>
+						</div>
+
+						<div class="carousel carousel-nav"
+						  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "wrapAround": true, "imagesLoaded": true }'>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2020.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2020.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/keyClue-recruit2019-1.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/keyClue-recruit2019-2.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/hoodie-2019.png"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/agm2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/movieNight-2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/skiTrip-2019.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/foodDrive-2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/movieNight-2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/byElection-2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/hoodie-2018.png"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2018.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-fall2017.png"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2017.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2017.png"></div>
+
+							<div class="carousel-cell"><img src="/events/assets/techElecNight-2016.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/lan-winter2016.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/profMixer-2016.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/ranchmans-2016.png"></div>
+							<div class="carousel-cell"><img src="/events/assets/googleSocial-2016.png"></div>
+						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -65,7 +131,9 @@
 
 		<!-- Scripts -->
 		<script src="../scripts/to-top.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<!-- <script src="https://unpkg.com/packery@2.1/dist/packery.pkgd.js"></script> -->
+		<!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
 	</body>
 </html>

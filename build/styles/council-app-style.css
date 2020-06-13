@@ -48,7 +48,7 @@ body {
 	text-align: center;
 
 	position: absolute;
-	top: 41px;
+	top: 71px;
 	right: 55px;
 	font-size: 45px;
 }
@@ -59,11 +59,11 @@ body {
 	padding: 0 0 0 55%;
 
 	position: absolute;
-	top: 113px;
+	top: 145px;
 	right: 55px;
 }
 
-#app--content #join-us .right-text#rt2 {top: 185px;}
+#app--content #join-us .right-text#rt2 {top: 225px;}
 
 /* The "Commissioner Form" formatting" */
 /* Following is style guide used on TO-TOP BUTTON */
@@ -80,7 +80,7 @@ body {
   border-radius: 4px;
 
 	position: absolute;
-	top: 263px;
+	top: 293px;
 	right: 55px;
 }
 
@@ -97,7 +97,12 @@ body {
 	font-family: 'Ubuntu', normal;
 	text-align: center;
 
-	padding: 55px 0 20px;
+	padding: 55px 0 10px;
+}
+
+#app--content #app-form p {
+	text-align: center;
+	padding: 5px 0 20px;
 }
 
 #app--content #app-form form{
@@ -164,13 +169,31 @@ body {
 
 #app--content #app-form form #email{
 	grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 3;
 	grid-row-start: 7;
 	grid-row-end: 8;
 }
 
 #app--content #app-form form #email-box{
 	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 8;
+	grid-row-end: 9;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#app--content #app-form form #ucid{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#app--content #app-form form #ucid-box{
+	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 8;
 	grid-row-end: 9;

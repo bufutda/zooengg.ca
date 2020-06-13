@@ -4,10 +4,12 @@
 	padding: 0;
 	font-family: 'Didact Gothic';
 	color: #32292F;
-	/* force scrollbar, prevents initial gap */
 }
 
-html { overflow-y: scroll; }
+html {
+	/* force scrollbar, prevents initial gap */
+	overflow-y: auto;
+}
 
 html, body {
 	height: 100%;
@@ -16,10 +18,8 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
 	background: #e7e7ea;
-		align-items: center;
+	align-items: center;
 }
 
 #events--body {
@@ -32,48 +32,134 @@ body {
 	padding-bottom: 300px;	/* Height of the footer */
 }
 
-/* Following is to set up the isotope containing past event info*/
+/* Following is the setup for Event descriptions*/
+#events--content #event-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: -items: center;
+}
+
+#events--content .event {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 75%;
+	text-align: center;
+	background: #ababab12;
+	border-radius: 25px;
+	padding: 15px;
+	margin: 0 0 40px;
+}
+
+#events--content #event-description h1 {
+	text-align: center;
+	padding: 25px 0 10px;
+}
+
+#events--content #additional-event-text {
+	text-align: center;
+	padding: 0 225px 25px;
+}
+
 #events--content #past-events h1 {
-	font-family: 'Ubuntu', normal;
 	text-align: center;
-
-	padding: 35px 0 20px;
+	padding: 20px 0 ;
 }
 
-#events--content #past-events .sidebar {
-	text-align: center;
+#events--content .event h2 { font-size: 20px; }
+#events--content .event .description {font-size: 13px;}
+
+
+/* Creating grids within the description blocks */
+#events--content #event-cards .event {display: grid;}
+
+#events--content #event-cards .left-image {
+	height: 300px;
+	grid-template-columns:  15px 30% 30px auto 15px;
+ 	grid-template-rows:  15px 40px auto 15px;
 }
 
-#events--content #past-events .sidebar ul li {
-	display: inline-block;
-	margin: 0;
-	list-style: none;
-	padding: 10px 15px;
-	border: 1px solid red;
-	cursor: pointer;
-
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
+#events--content #event-cards .right-image {
+	height: 300px;
+	grid-template-columns:  15px auto 30px 30% 15px;
+ 	grid-template-rows:  15px 35px auto 15px;
+	margin: auto;
 }
 
-#events--content #past-events .sidebar ul li:hover {
-	background: red;
-	color: #ffff;
+#events--content #event-cards .left-image h2 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
-#events--content #past-events .poster-grid {
-	width: 100%;
+
+#events--content #event-cards .right-image h2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
 }
 
-#events--content #past-events .poster-grid .item {
-	width: 300px;
-	float: left;
-	margin: 0 0 10px;
+#events--content #event-cards .left-image .description {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	text-align: justify;
 }
 
-#events--content #past-events .poster-grid .item img {
-	width: 30%;
+
+#events--content #event-cards .right-image .description {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	text-align: justify;
 }
+
+
+/* Setting up the flickity slideshow */
+	/* CSS is all at the link, so !important is needed to change it */
+.carousel-main .flickity-viewport {
+	height: 355px !important;
+	background: #F7F7FF;
+}
+.carousel-nav {margin: 15px 0 0;}
+.carousel-nav .carousel-cell {height: 110px;}
+
+.carousel-main .carousel-cell img {
+  display: block;
+	height: 350px;
+  /* dim unselected */
+  opacity: 0.7;
+}
+
+/* brighten selected image */
+.carousel-main .carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* Following setsup Right and Left Buttons on the Slider */
+.flickity-prev-next-button:hover {opacity: 1;}
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+}
+.carousel-nav .flickity-prev-next-button {
+	width: 30px;
+	height: 30px;
+}
+
+/* Following setups up highlighting hovered pictures in the navigator */
+.carousel-nav .carousel-cell img {
+  height: 100px;
+	padding: 0 5px;
+	opacity: 0.7;
+}
+
+.carousel-nav .carousel-cell img:hover {opacity: 1;}

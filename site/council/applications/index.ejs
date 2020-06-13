@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <!--
 	Electrical, Computer, and Software Engineering Students' Society Website
-	Copyright (c) 2020 Ines Rosito, All Rights Reserved
+	Website Created in 2020 by Ines Rosito.
 -->
 	<head>
 		<title>
@@ -25,28 +25,32 @@
 			<div id="app--footer-setup">
 				<div id="app--content">
 					<div id="join-us">
-						<img class="profile-pic" src="/council/assets/join-us.svg">
+						<img src="/council/assets/join-us.svg">
 						<h1 id="right">Join the Team!</h1>
 
-						<p class="right-text">We are accepting applications for the <b>2020-2021</b> academic year! There are various commissioner roles avaiable, so pick the one right for you.</p>
+						<p class="right-text">We are accepting applications for the <b>2020-2021</b> academic year! There are various commissioner roles available, so be sure to pick the right one for you.</p>
 						<p class="right-text" id="rt2"><b>Questions?</b> Email execs@zooengg.ca, otherwise download the form below and submit your application to join today!</p>
 
 						<a id="button" href="/council/assets/CommissionerForm.pdf" target="_blank">Download Form</a>
 					</div>
 					<div id="app-form">
 						<h1>Send Us Your Application!</h1>
+						<p>We would like to thank every applicant in advance.</p>
 						<form id="grid" action="">
 							<label id="name" for="name">Name *</label>
 					    <label id="fname" for="fname">First Name</label>
-					    <input id="fname-box" type="text" name="firstname" placeholder="First Name">
+					    <input required id="fname-box" type="text" name="firstname" placeholder="First Name">
 
 					    <label id="lname" for="lname">Last Name</label>
-					    <input id="lname-box" type="text" name="lastname" placeholder="Last Name">
+					    <input required id="lname-box" type="text" name="lastname" placeholder="Last Name">
 
 							<label id="email" for="email">UCalgary Email *</label>
-							<input id="email-box" type="text" name="email" placeholder="UCalgary Email">
+							<input required id="email-box" type="text" name="email" placeholder="@ucalgary.com">
 
-					    <label id="degree" for="degree">Degree *</label>
+							<label id="ucid" for="ucid">UCID *</label>
+							<input required id="ucid-box" type="text" name="ucid" placeholder="UCID">
+
+					    <label id="degree" for="degree">Degree</label>
 					    <select id="degree-select" name="degree">
 								<option selected="selected" disabled>Please Select from Dropdown</option>
 					      <option value="computer">Computer</option>
@@ -60,7 +64,7 @@
 								<option value="oil">Oil & Gas</option>
 					    </select>
 
-							<label id="year" for="year">Year *</label>
+							<label id="year" for="year">Year</label>
 					    <select id="year-select" name="year">
 								<option selected="selected" disabled>Please Select from Dropdown</option>
 					      <option value="year2">2nd Year</option>
@@ -70,10 +74,10 @@
 					    </select>
 
 							<label id="file" for="file">Upload your Commissioner Application *</label>
-							<input id="file-select" accept="application/pdf" type="file" name="file">
+							<input required id="file-select" accept="application/pdf" type="file" name="file">
 
 					    <label id="comments" for="comment">Additional Comments</label>
-					    <textarea id="comments-box" name="comment" placeholder="Additional comments, if any..."></textarea>
+					    <textarea maxlength="6000" id="comments-box" name="comment" placeholder="Additional comments, if any (6000 char. limit)..."></textarea>
 
 					    <input id="submit" type="submit" value="Submit">
 

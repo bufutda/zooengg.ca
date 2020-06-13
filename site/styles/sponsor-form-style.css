@@ -19,12 +19,212 @@ body {
 	align-items: center;
 }
 
-#container {
+/* Following is for the FOOTER*/
+#sponsor--body {
 	min-height: 100%;
 	background: #F7F7FF;
 }
 
-#main {
+#sponsor--footer-setup {
 	overflow: auto;
 	padding-bottom: 300px;	/* Height of the footer */
+}
+#sponsor--footer-setup #sponsor--content {
+	padding: 35px;
+	/* position: relative; */
+}
+
+#sponsor--footer-setup #sponsor--content #sponsor-reasoning {
+	padding: 35px;
+}
+
+/* The "Contact Us Form" formatting" */
+#sponsor--footer-setup #sponsor--content .button {
+  font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+
+  border: .5px solid;
+  background-color: #32292F;
+  color: #F7F7FF;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+	/* Removes box that outlines object on click */
+.button:active, .button:focus {
+  outline: 0;
+	-moz-outline-style: none;
+}
+
+.button:hover {background-color: #767475;}
+
+
+/* Following is to set up and format the form using css grid*/
+#sponsor--content #sponsor-form h1 {
+	font-family: 'Ubuntu', normal;
+	text-align: center;
+
+	padding: 55px 0 10px;
+}
+
+#sponsor--content #sponsor-form p {
+	text-align: center;
+	padding: 5px 0 20px;
+}
+
+#sponsor--content #sponsor-form form{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 65%;
+	height: 700px;
+	/* padding: 20px; */
+	margin: 0 auto 35px;
+	/* margin: auto auto 35px; */
+	/* text-align: center; */
+	background: #ababab12;
+	border-radius: 25px;
+
+	/* padding: 25px 75px 25px; */
+	display: grid;
+	grid-template-columns: auto 35% 20px 35% auto;
+	grid-template-rows: 40px 30px 10px 30px 30px 20px 30px 30px 20px 30px 30px 20px 30px 30px 10px 30px 175px 20px 40px 40px;
+	/* align-content: center; */
+}
+
+#sponsor--content #sponsor-form form #name{
+		grid-column-start: 2;
+	  grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		font-size: 25px;
+}
+
+#sponsor--content #sponsor-form form #fname{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#sponsor--content #sponsor-form form #lname{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+#sponsor--content #sponsor-form form #fname-box{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #lname-box{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #email{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+#sponsor--content #sponsor-form form #email-box{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 8;
+	grid-row-end: 9;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #company{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 10;
+	grid-row-end: 11;
+}
+
+#sponsor--content #sponsor-form form #company-box{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 11;
+	grid-row-end: 12;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #subject{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 13;
+	grid-row-end: 14;
+}
+
+#sponsor--content #sponsor-form form #subject-box{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 14;
+	grid-row-end: 15;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	padding: 0 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #message{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 16;
+	grid-row-end: 17;
+}
+
+#sponsor--content #sponsor-form form #message-box{
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 17;
+	grid-row-end: 18;
+	background: #F7F7FF;
+	border: 0.3px solid;
+	resize: none;
+	padding: 5px;
+	outline: none;
+}
+
+#sponsor--content #sponsor-form form #submit{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 19;
+	grid-row-end: 20;
+}
+
+#sponsor--content #sponsor-form form #submit{
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+
+  border: .5px solid;
+  background-color: #32292F;
+  color: #F7F7FF;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
 }

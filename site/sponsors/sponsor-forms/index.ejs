@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <!--
 	Electrical, Computer, and Software Engineering Students' Society Website
-	Copyright (c) 2020 Ines Rosito, All Rights Reserved
+	Website Created in 2020 by Ines Rosito.
 -->
 	<head>
 		<title>
@@ -21,16 +21,50 @@
 		<%- include('../../templates/header.partial.ejs', {}); %>
 
 
-	  <div id="container">
-			<div id="main">
-				BECOME A SPONSOR -
+		<div id="sponsor--body">
+			<div id="sponsor--footer-setup">
+				<div id="sponsor--content">
+					<div id="sponsor-reasoning">
+						<p> adajkdasndfjkansflkadjsnf aljdksnfasjdk fnadsjf nasdfkj lasnf jaksdnfaskjdnf alskjdnfa ksjdfnaslkdf nadslkf nasdlkf nasdkljfnadskljf nalsdkjfn lasdkfn asldkjfn aslkjdfn askdjfn asldj nfasldkjfn alskjdfn asdkjf nalsdkfj nasdkjfn alskj f</p>
+						<!-- <a class="button" id="private-button" href="/sponsors/assets/PrivateSponsorPackage.pdf" target="_blank">Private Sponsorship</a>
+						<a class="button" id="corporate-button" href="/sponsors/assets/CorporateSponsorPackage.pdf" target="_blank">Corporate Sponsorship</a> -->
+					</div>
+
+					<div id="sponsor-form">
+						<h1>Contact Us About Sponsorships!</h1>
+						<p>We look forward to hearing from you.</p>
+						<form id="grid" action="">
+							<label id="name" for="name">Name *</label>
+							<label id="fname" for="fname">First Name</label>
+							<input required id="fname-box" type="text" name="firstname" placeholder="First Name">
+
+							<label id="lname" for="lname">Last Name</label>
+							<input required id="lname-box" type="text" name="lastname" placeholder="Last Name">
+
+							<label id="email" for="email">Email *</label>
+							<input required id="email-box" type="text" name="email" placeholder="Email">
+
+							<label id="company" for="company">Company/Organization</label>
+							<input id="company-box" type="text" name="company" placeholder="Company/Organization">
+
+							<label id="subject" for="subject">Subject *</label>
+							<input required id="subject-box" type="text" name="subject" placeholder="Subject">
+
+							<label id="message" for="comment">Message *</label>
+							<textarea required maxlength="6000" id="message-box" name="message" placeholder="Message (6000 char. limit)"></textarea>
+
+							<input id="submit" type="submit" value="Submit">
+
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 
-	  <%- include('../../templates/footer.partial.ejs', {}); %>
+		<%- include('../../templates/footer.partial.ejs', {}); %>
 
 		<!-- Scripts -->
 		<script src="../../scripts/to-top.js"></script>
 
 	</body>
-</html>
+	</html>
