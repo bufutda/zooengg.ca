@@ -52,6 +52,22 @@ body {
   border-radius: 4px;
 }
 
+#sponsor--content h1 {
+	font-family: 'Ubuntu', normal;
+	text-align: center;
+
+	padding: 0 0 15px;
+}
+
+#sponsor--content #sponsor-reasoning p {
+	text-align: justify;
+}
+
+#sponsor--content #sponsor-form h1 {
+	padding-top: 55px;
+}
+
+
 	/* Removes box that outlines object on click */
 .button:active, .button:focus {
   outline: 0;
@@ -60,15 +76,7 @@ body {
 
 .button:hover {background-color: #767475;}
 
-
 /* Following is to set up and format the form using css grid*/
-#sponsor--content #sponsor-form h1 {
-	font-family: 'Ubuntu', normal;
-	text-align: center;
-
-	padding: 55px 0 10px;
-}
-
 #sponsor--content #sponsor-form p {
 	text-align: center;
 	padding: 5px 0 20px;
