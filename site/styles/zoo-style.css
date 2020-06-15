@@ -1,11 +1,5 @@
 /* TODO:
 		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
-		- Fix the spacing between and above/below cards
-		- Choose a new header
-		- Clean up file
-		- Fix to-top
-		- Some mobile devices have extra space at the bottom
-		- Zoom levels have odd spacing between cards
 */
 
 /* Following is for page setup */
@@ -23,11 +17,7 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
-	/* background: #F5F5F5; */
-	/* background: #F1F1F1; */
-		background: #e7e7ea;
+	background: #e7e7ea;
 	align-items: center;
 }
 
@@ -35,14 +25,11 @@ body {
 #zoo--body {
 	min-height: 100%;
 	background: #F7F7FF;
-		/* Shadow does not go the complete length of the content */
-	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 #zoo--footer-setup {
 	overflow: auto;
 	padding-bottom: 275px;	/* Height of the footer */
-	/* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 #zoo--content {
@@ -52,11 +39,9 @@ body {
 
 /* Following is for the text describing the meaning*/
 #zoo--content #zoo-title {
-	/* color: #32292F; */
 	font-family: 'Ubuntu', normal;
   font-size: 35px;
   padding: 50px 0 20px;
-		/* background-image: linear-gradient(#70ABAF, #F7F7FF); */
 }
 
 #zoo--content #zoo-description {
@@ -70,25 +55,17 @@ body {
 	padding: 0 30px;
 }
 
-#zoo--content hr {
-	margin: 10px 0 25px;
-}
+#zoo--content hr {margin: 10px 0 25px;}
 
 /* Following is used to format the pictures*/
-#zoo--content #zoo-pictures a {
-	text-decoration: none;
-}
+#zoo--content #zoo-pictures a {text-decoration: none;}
 
-.thumbnail {
-	max-height: 175px;
-}
+.thumbnail {max-height: 175px;}
 
 /** LIGHTBOX MARKUP **/
-
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
-
 	/** Position and style */
 	position: fixed;
 	z-index: 5;
@@ -110,7 +87,6 @@ body {
 .lightbox:target {
 	/** Remove default browser outline */
 	outline: none;
-
 	/** Unhide lightbox **/
 	display: block;
 }

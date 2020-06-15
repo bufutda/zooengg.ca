@@ -1,3 +1,7 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
 /* Following is to remove any existing formats */
 * {
 	margin: 0;
@@ -13,8 +17,6 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
 	background: #e7e7ea;
 	align-items: center;
 }
@@ -45,7 +47,6 @@ body {
 #sponsor--content #sponsor-thanks h1#centered {
 	font-size: 45px;
 	font-family: 'Ubuntu', normal;
-	/* color: #32292F; */
 
 	position: absolute;
   top: 46%;
@@ -63,11 +64,6 @@ body {
 	border: 0;
 	background-color: #32292F;
 	padding: 5px 0 0 0;
-
-	/* -webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px; */
 	border-radius: 5px;
 }
 
@@ -81,10 +77,6 @@ body {
 	background-color: #32292F;
 	padding: 5px 0 0 0;
 
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 }
 

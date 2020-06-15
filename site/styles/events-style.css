@@ -1,3 +1,8 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+		- Fix the layout for the event cards
+*/
+
 /* Following is to remove any existing formats */
 * {
 	margin: 0;
@@ -37,7 +42,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	text-align: -items: center;
 }
 
 #events--content .event {
@@ -69,30 +73,22 @@ body {
 #events--content .event h2 { font-size: 20px; }
 #events--content .event .description {font-size: 13px;}
 
-
 /* Creating grids within the description blocks */
 #events--content #event-cards .event {display: grid;}
 
-/* #events--content #event-cards #card-1.left-image-card {;} */
-
 #events--content #event-cards .left-image-card {
-	/* height: 300px; */
-	/* height: 195px; */
 	grid-template-columns:  15px 30% 15px auto 15px;
  	grid-template-rows:  15px 40px auto 15px;
+	margin: 0 auto 40px;
 }
 
 #events--content #event-cards #card-5.left-image-card {
-	/* height: 300px; */
-	/* height: 195px; */
 	grid-template-columns:  15px 30% 15px auto 15px;
  	grid-template-rows:  15px 40px fit-content 15px;
+	margin: 0 auto 40px;
 }
 
-
 #events--content #event-cards .right-image-card {
-	/* height: 300px; */
-	/* height: 195px; */
 	grid-template-columns:  15px auto 15px 30% 15px;
  	grid-template-rows:  15px 35px auto 15px;
 	margin: 0 auto 40px;
@@ -104,7 +100,6 @@ body {
 	grid-row-start: 2;
 	grid-row-end: 3;
 }
-
 
 #events--content #event-cards .right-image-card h2 {
 	grid-column-start: 2;
@@ -120,7 +115,6 @@ body {
 	grid-row-end: 4;
 	text-align: justify;
 }
-
 
 #events--content #event-cards .right-image-card .description {
 	grid-column-start: 2;
@@ -149,27 +143,6 @@ body {
   width: 65%;
   max-height: 100%;
 }
-/* #events--content #event-cards .left-image-card #left-1 {
-	background: url('/events/assets/lan-party.svg');
-	background-size: cover;
-}
-
-#events--content #event-cards .left-image-card #left-2 {
-	background: url('/events/assets/lan-party.svg');
-	background-size: cover;
-} */
-
-
-/* #events--content #event-cards .right-image-card #right-1 {
-	background: url('/events/assets/lan-party.svg');
-	background-size: cover;
-}
-
-#events--content #event-cards .right-image-card #right-2 {
-	background: url('/events/assets/lan-party.svg');
-	background-size: cover;
-} */
-
 
 /* Setting up the flickity slideshow */
 	/* CSS is all at the link, so !important is needed to change it */
@@ -177,6 +150,7 @@ body {
 	height: 355px !important;
 	background: #F7F7FF;
 }
+
 .carousel-nav {margin: 15px 0 0;}
 .carousel-nav .carousel-cell {height: 110px;}
 

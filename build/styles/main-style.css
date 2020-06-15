@@ -1,3 +1,7 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
 /* Following is to remove any existing formats */
 * {
 	margin: 0;
@@ -14,8 +18,6 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
 	background: #e7e7ea;
 	align-items: center;
 }
@@ -31,8 +33,6 @@ body {
 	padding-bottom: 275px;	/* Height of the footer */
 }
 
-/* Following is for the SLIDER */
-
 /* Setting up FLEXBOXs */
 #main--content {
 	display: flex;
@@ -47,11 +47,7 @@ body {
 	order: 2:
 }
 
-
 #main--content #about {
-	/* flex: 1 0 0;
-	order: 1; */
-	/* padding: 25px 50px; */
 	padding: 40px 15% 10%;
 	font-size: 15px;
 	text-align: justify;
@@ -64,22 +60,11 @@ body {
 	text-align: center;
 	font-size: 35px;
 	padding: 5px 0 30px;
-	/* background-image: linear-gradient(#70ABAF, #F7F7FF); */
 }
 
-#main--content #about hr {
-	margin: 25px 0;
-}
+#main--content #about hr {margin: 25px 0;}
 
-#main--content #about #about--constitution {
-	text-align: center;
-}
-
-/* #main--content .facebook-feed {
-	background: #dcdce0;
-	flex: 0 0 0;
-	order: 1;
-} */
+#main--content #about #about--constitution {text-align: center;}
 
 /* Setting up the flickity slideshow */
 .carousel-cell {
@@ -88,7 +73,7 @@ body {
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
-  display:         flex;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
@@ -119,18 +104,6 @@ body {
           filter: none;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel-cell {
-    height: 400px;
-  }
-}
-
-@media screen and ( min-width: 960px ) {
-  .carousel-cell {
-    width: 60%;
-  }
-}
-
 /* CSS is all at the link, so !important is needed to change it */
 	/* Uploaded pictures should have the height of 500px */
 .flickity-viewport {
@@ -139,28 +112,19 @@ body {
 	padding: 25px 0 0 0;
 }
 .flickity-page-dots {bottom: 25px !important;}
-.flickity-page-dots .dot.is-selected { background: #F7F7FF !important; }
+.flickity-page-dots .dot.is-selected { background: #F7F7FF; }
 .flickity-page-dots .dot {
 	opacity: 0.45;
-	background: #F7F7FF !important;
+	background: #F7F7FF;
 }
 
 /* buttons, no circle */
 .flickity-prev-next-button {
   width: 60px;
   height: 60px;
-  background: transparent;
   opacity: 0.6;
 }
-.flickity-prev-next-button:hover {
-  background: transparent;
-  opacity: 1;
-}
+.flickity-prev-next-button:hover {opacity: 1;}
 /* arrow color */
-.flickity-prev-next-button .arrow { fill: #32292F;}
-.flickity-prev-next-button.no-svg { color: white; }
-/* closer to edge */
-.flickity-prev-next-button.previous { left: 0; }
-.flickity-prev-next-button.next { right: 0; }
-/* hide disabled button */
-.flickity-prev-next-button:disabled { display: none; }
+.flickity-prev-next-button .arrow {fill: #32292F;}
+.flickity-prev-next-button.no-svg {color: white;}

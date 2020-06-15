@@ -1,3 +1,7 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
 /* Following is to remove any existing formats */
 * {
 	margin: 0;
@@ -13,8 +17,6 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
 	background: #e7e7ea;
 	align-items: center;
 }
@@ -31,10 +33,7 @@ body {
 }
 
 /* Following is to setup the .svg picture: */
-#app--content #join-us {
-	text-align: center;
-  position: relative;
-}
+#app--content #join-us {position: relative;}
 
 #app--content #join-us img {
 	display: block;
@@ -42,11 +41,12 @@ body {
 	width: 50%;
 }
 
-/* TODO: use @media*/
-#app--content #join-us h1#right {
+#app--content h1 {
 	font-family: 'Ubuntu', normal;
 	text-align: center;
+}
 
+#app--content #join-us h1#right {
 	position: absolute;
 	top: 71px;
 	right: 55px;
@@ -54,13 +54,12 @@ body {
 }
 
 #app--content #join-us .right-text {
-	text-align: right;
-	font-size: 15px;
-	padding: 0 0 0 55%;
-
 	position: absolute;
 	top: 145px;
 	right: 55px;
+	padding: 0 0 0 55%;
+	font-size: 15px;
+	text-align: right;
 }
 
 #app--content #join-us .right-text#rt2 {top: 225px;}
@@ -69,10 +68,8 @@ body {
 /* Following is style guide used on TO-TOP BUTTON */
 #button {
   font-size: 20px;
-	text-align: center;
 	text-decoration: none;
 
-  border: .5px solid;
   background-color: #32292F;
   color: #F7F7FF;
   cursor: pointer;
@@ -93,12 +90,7 @@ body {
 #button:hover {background-color: #767475;}
 
 /* Following is to set up and format the form using css grid*/
-#app--content #app-form h1 {
-	font-family: 'Ubuntu', normal;
-	text-align: center;
-
-	padding: 55px 0 10px;
-}
+#app--content #app-form h1 {padding: 55px 0 10px;}
 
 #app--content #app-form p {
 	text-align: center;
@@ -108,19 +100,13 @@ body {
 #app--content #app-form form{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	width: 65%;
-	height: 700px;
-	/* padding: 20px; */
 	margin: 0 auto 35px;
-	/* margin: auto auto 35px; */
-	/* text-align: center; */
 	background: #ababab12;
 	border-radius: 25px;
 
-	/* padding: 25px 75px 25px; */
 	display: grid;
 	grid-template-columns: auto 35% 20px 35% auto;
 	grid-template-rows: 40px 30px 10px 30px 30px 20px 30px 30px 20px 30px 30px 20px 30px 30px 10px 30px 175px 20px 40px 40px;
-	/* align-content: center; */
 }
 
 #app--content #app-form form #name{
