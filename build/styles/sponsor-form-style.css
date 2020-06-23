@@ -1,3 +1,7 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
 /* Following is to remove any existing formats */
 * {
 	margin: 0;
@@ -13,8 +17,6 @@ html, body {
 }
 
 body {
-	/* background: #E3EAEB; */
-	/* background: #70ABAF; */
 	background: #e7e7ea;
 	align-items: center;
 }
@@ -29,14 +31,10 @@ body {
 	overflow: auto;
 	padding-bottom: 300px;	/* Height of the footer */
 }
-#sponsor--footer-setup #sponsor--content {
-	padding: 35px;
-	/* position: relative; */
-}
 
-#sponsor--footer-setup #sponsor--content #sponsor-reasoning {
-	padding: 35px;
-}
+#sponsor--footer-setup #sponsor--content {padding: 35px;}
+
+#sponsor--footer-setup #sponsor--content #sponsor-reasoning {padding: 35px;}
 
 /* The "Contact Us Form" formatting" */
 #sponsor--footer-setup #sponsor--content .button {
@@ -44,7 +42,6 @@ body {
 	text-align: center;
 	text-decoration: none;
 
-  border: .5px solid;
   background-color: #32292F;
   color: #F7F7FF;
   cursor: pointer;
@@ -59,13 +56,9 @@ body {
 	padding: 0 0 15px;
 }
 
-#sponsor--content #sponsor-reasoning p {
-	text-align: justify;
-}
+#sponsor--content #sponsor-reasoning p {text-align: justify;}
 
-#sponsor--content #sponsor-form h1 {
-	padding-top: 55px;
-}
+#sponsor--content #sponsor-form h1 {padding-top: 55px;}
 
 
 	/* Removes box that outlines object on click */
@@ -86,18 +79,13 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	width: 65%;
 	height: 700px;
-	/* padding: 20px; */
 	margin: 0 auto 35px;
-	/* margin: auto auto 35px; */
-	/* text-align: center; */
 	background: #ababab12;
 	border-radius: 25px;
 
-	/* padding: 25px 75px 25px; */
 	display: grid;
 	grid-template-columns: auto 35% 20px 35% auto;
 	grid-template-rows: 40px 30px 10px 30px 30px 20px 30px 30px 20px 30px 30px 20px 30px 30px 10px 30px 175px 20px 40px 40px;
-	/* align-content: center; */
 }
 
 #sponsor--content #sponsor-form form #name{

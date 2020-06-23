@@ -28,15 +28,15 @@
 						<img src="/council/assets/join-us.svg">
 						<h1 id="right">Join the Team!</h1>
 
-						<p class="right-text">We are accepting applications for the <b>2020-2021</b> academic year! There are various commissioner roles available, so be sure to pick the right one for you.</p>
-						<p class="right-text" id="rt2"><b>Questions?</b> Email execs@zooengg.ca, otherwise download the form below and submit your application to join today!</p>
+						<p class="right-text">We are accepting applications for the <b>2020-2021</b> academic year! There are various commissioner roles available, so be sure to pick the right one for you.
+						<br><br><b>Questions?</b> Email execs@zooengg.ca, otherwise download the form below and submit your application to join today!</p>
 
 						<a id="button" href="/council/assets/CommissionerForm.pdf" target="_blank">Download Form</a>
 					</div>
 					<div id="app-form">
 						<h1>Send Us Your Application!</h1>
 						<p>We would like to thank every applicant in advance.</p>
-						<form id="grid" action="">
+						<form id="grid" action="/council/applications/contact-form-app.php" method="post">
 							<label id="name" for="name">Name *</label>
 					    <label id="fname" for="fname">First Name</label>
 					    <input required id="fname-box" type="text" name="firstname" placeholder="First Name">
@@ -51,8 +51,8 @@
 							<input required id="ucid-box" type="text" name="ucid" placeholder="UCID">
 
 					    <label id="degree" for="degree">Degree</label>
-					    <select id="degree-select" name="degree">
-								<option selected="selected" disabled>Please Select from Dropdown</option>
+					    <select required id="degree-select" name="degree">
+								<option selected="selected" disabled=disabled>Please Select from Dropdown</option>
 					      <option value="computer">Computer</option>
 					      <option value="electrical">Electrical</option>
 					      <option value="software">Software</option>
@@ -65,8 +65,8 @@
 					    </select>
 
 							<label id="year" for="year">Year</label>
-					    <select id="year-select" name="year">
-								<option selected="selected" disabled>Please Select from Dropdown</option>
+					    <select required id="year-select" name="year">
+								<option selected="selected" disabled=disabled>Please Select from Dropdown</option>
 					      <option value="year2">2nd Year</option>
 					      <option value="year3">3rd Year</option>
 					      <option value="year4">4th Year</option>
