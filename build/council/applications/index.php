@@ -32,7 +32,7 @@
 				<ul>
 					<li class="council-dropdown"><a href="/council/execs/index.html">EXECUTIVES</a></li>
 					<li class="council-dropdown"><a href="/council/commissioners/index.html">COMMISSIONERS</a></li>
-					<li class="council-dropdown"><a href="/council/applications/index.html">JOIN THE TEAM</a></li>
+					<li class="council-dropdown"><a href="/council/applications/index.php">JOIN THE TEAM</a></li>
 				</ul>
 			</li>
 			<li><a href="/events/index.html">EVENTS</a></li>
@@ -62,7 +62,7 @@
 					<div id="app-form">
 						<h1>Send Us Your Application!</h1>
 						<p>We would like to thank every applicant in advance.</p>
-						<form id="grid" action="/council/applications/contact-form-app.php" method="post">
+						<form id="grid" action="/council/applications/contact-form-app.php" method="post" enctype="multipart/form-data">
 							<label id="name" for="name">Name *</label>
 					    <label id="fname" for="fname">First Name</label>
 					    <input required id="fname-box" type="text" name="firstname" placeholder="First Name">
@@ -70,42 +70,42 @@
 					    <label id="lname" for="lname">Last Name</label>
 					    <input required id="lname-box" type="text" name="lastname" placeholder="Last Name">
 
-							<label id="email" for="email">UCalgary Email *</label>
-							<input required id="email-box" type="text" name="email" placeholder="@ucalgary.com">
+							<label id="email" for="email">Email *</label>
+							<input required id="email-box" type="text" name="email" placeholder="Email  (@ucalgary.com preferred)">
 
 							<label id="ucid" for="ucid">UCID *</label>
-							<input required id="ucid-box" type="text" name="ucid" placeholder="UCID">
+							<input required maxlength="8" id="ucid-box" type="text" name="ucid" placeholder="UCID">
 
 					    <label id="degree" for="degree">Degree</label>
 					    <select required id="degree-select" name="degree">
-								<option selected="selected" disabled=disabled>Please Select from Dropdown</option>
-					      <option value="computer">Computer</option>
-					      <option value="electrical">Electrical</option>
-					      <option value="software">Software</option>
+								<option selected disabled hidden>Please Select from Dropdown</option>
+					      <option value="Computer">Computer</option>
+					      <option value="Electrical">Electrical</option>
+					      <option value="Software">Software</option>
 								<option disabled>------------</option>
-								<option value="chemical">Chemical</option>
-								<option value="civil">Civil</option>
-								<option value="geomatics">Geomatics</option>
-								<option value="mechanical">Mechanical</option>
-								<option value="oil">Oil & Gas</option>
+								<option value="Chemical">Chemical</option>
+								<option value="Civil">Civil</option>
+								<option value="Geomatics">Geomatics</option>
+								<option value="Mechanical">Mechanical</option>
+								<option value="Oil & Gas">Oil & Gas</option>
 					    </select>
 
 							<label id="year" for="year">Year</label>
 					    <select required id="year-select" name="year">
-								<option selected="selected" disabled=disabled>Please Select from Dropdown</option>
-					      <option value="year2">2nd Year</option>
-					      <option value="year3">3rd Year</option>
-					      <option value="year4">4th Year</option>
-								<option value="year5">5th Year and Above</option>
+								<option selected="selected" disabled>Please Select from Dropdown</option>
+					      <option value="2nd Year">2nd Year</option>
+					      <option value="3rd Year">3rd Year</option>
+					      <option value="4th Year">4th Year</option>
+								<option value="5th Year and Above">5th Year and Above</option>
 					    </select>
 
 							<label id="file" for="file">Upload your Commissioner Application *</label>
-							<input required id="file-select" accept="application/pdf" type="file" name="file">
+							<input required id="file-select" accept="application/pdf" type="file" name="fileUpload">
 
 					    <label id="comments" for="comment">Additional Comments</label>
 					    <textarea maxlength="6000" id="comments-box" name="comment" placeholder="Additional comments, if any (6000 char. limit)..."></textarea>
 
-					    <input id="submit" type="submit" value="Submit">
+					    <input id="submit" name="submit" type="submit" value="Submit">
 
 						</form>
 					</div>
@@ -130,7 +130,7 @@
 						<li><a href="/main/index.html#main-title">   About Us</a></li>
 						<li><a href="/council/execs/index.html">   Executive Council</a></li>
 						<li><a href="/council/commissioners/index.html">   Commissioners</a></li>
-						<li><a href="/council/applications/index.html">   Join the Team</a></li>
+						<li><a href="/council/applications/index.php">   Join the Team</a></li>
 					</ul>
 				</div>
 				<div id="site-links2">
