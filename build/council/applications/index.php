@@ -39,7 +39,7 @@
 			<li><a href="#">SPONSORS<img class="arrow" src="/icon-images/icon-dropdown.png"></a>
 				<ul>
 					<li><a href="/sponsors/our-sponsors/index.html">OUR SPONSORS</a></li>
-					<li><a href="/sponsors/sponsor-forms/index.html">BECOME A SPONSOR</a></li>
+					<li><a href="/sponsors/sponsor-form/index.php">BECOME A SPONSOR</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -92,7 +92,7 @@
 
 							<label id="year" for="year">Year</label>
 					    <select required id="year-select" name="year">
-								<option selected="selected" disabled>Please Select from Dropdown</option>
+								<option selected disabled hidden>Please Select from Dropdown</option>
 					      <option value="2nd Year">2nd Year</option>
 					      <option value="3rd Year">3rd Year</option>
 					      <option value="4th Year">4th Year</option>
@@ -138,7 +138,7 @@
 						<br><br>
 						<li><a href="/events/index.html">Events</a></li>
 						<li><a href="/sponsors/our-sponsors/index.html">Our Sponsors</a></li>
-						<li><a href="/sponsors/sponsor-forms/index.html">Become a Sponsor</a></li>
+						<li><a href="/sponsors/sponsor-form/index.php">Become a Sponsor</a></li>
 				</div>
 		</div>
 
