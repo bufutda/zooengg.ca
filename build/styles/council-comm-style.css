@@ -44,7 +44,7 @@ body {
 
 /* Following sets up the commissioner cards */
 #comm--content #page-description {
-	padding: 15px 15% 10px;
+	padding: 15px 15% 5px;
 	text-align: center;
 	font-size: 17px;
 }
