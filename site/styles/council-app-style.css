@@ -33,33 +33,41 @@ body {
 }
 
 /* Following is to setup the .svg picture: */
-#app--content #join-us {position: relative;}
+#app--content #join-us {
+	margin: 20px 0 0 0;
+	display: grid;
+	grid-template-columns: 35px auto 20px auto 60px;
+}
 
 #app--content #join-us img {
-	display: block;
-	margin: 25px 0 0 45px;
-	width: 50%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	width: 100%
+}
+
+#app--content #join-us-text {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	text-align: right;
 }
 
 #app--content h1 {
 	font-family: 'Ubuntu', normal;
-	text-align: center;
 }
 
 #app--content #join-us h1#right {
-	position: absolute;
+	/* position: absolute;
 	top: 71px;
-	right: 55px;
+	right: 55px; */
 	font-size: 45px;
 }
 
 #app--content #join-us .right-text {
-	position: absolute;
+	/* position: absolute;
 	top: 145px;
 	right: 55px;
-	padding: 0 0 0 55%;
+	padding: 0 0 0 55%; */
 	font-size: 15px;
-	text-align: right;
 }
 
 /* The "Commissioner Form" formatting" */
@@ -74,9 +82,8 @@ body {
   padding: 10px 15px;
   border-radius: 4px;
 
-	position: absolute;
-	top: 293px;
-	right: 55px;
+	float: right;
+	margin: 35px;
 }
 
 	/* Removes box that outlines object on click */
@@ -88,7 +95,10 @@ body {
 #button:hover {background-color: #767475;}
 
 /* Following is to set up and format the form using css grid*/
-#app--content #app-form h1 {padding: 55px 0 10px;}
+#app--content #app-form h1 {
+	padding: 55px 0 10px;
+	text-align: center;
+}
 
 #app--content #app-form p {
 	text-align: center;

@@ -38,7 +38,7 @@ body {
 		font-family: 'Ubuntu', normal;
     text-align: center;
     font-size: 35px;
-    padding: 50px 0 0;
+    padding: 50px 35px 0;
 		/* background-image: linear-gradient(#70ABAF, #F7F7FF); */
 }
 
@@ -50,9 +50,24 @@ body {
 }
 
 #comm--content #page-description2 {
-	padding: 7px 35px 10px;
+	padding: 7px 35px 15px;
 	text-align: center;
 	font-size: 18px;
+}
+
+/* Editing the size of font and padding so it doesn't look weird on smaller windows */
+@media only screen and (max-device-width: 1000px) {
+	/* For mobile devices */
+	#comm--content #page-description { font-size: 10px !important; }
+
+	#comm--content #page-description2 { font-size: 11px !important; }
+}
+
+@media only screen and (max-width: 1000px) {
+	/* For smaller windows */
+	#comm--content #page-description { font-size: 13px; }
+
+	#comm--content #page-description { font-size: 14px; }
 }
 
 #comm--content #back{
@@ -95,6 +110,21 @@ body {
 	  padding: 10px 15px;
 	  border-radius: 4px;
 		text-align: center;
+}
+
+/* Editing the size of font and padding so it doesn't look weird on smaller windows */
+@media only screen and (max-device-width: 1000px) {
+	/* For mobile devices */
+	#button { font-size: 15px !important; }
+
+}
+
+@media only screen and (max-width: 1000px) {
+	/* For smaller windows */
+	#button {
+		font-size: 14px;
+		padding: 10px 10px !important;
+	}
 }
 
 	/* Removes box that outlines object on click */

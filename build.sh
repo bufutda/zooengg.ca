@@ -35,6 +35,8 @@ build() {
 	npm run template
 	find ./build -name "*.ejs" | xargs rm
 	cd $CWD
+	mv ./build/council/applications/index.html ./build/council/applications/index.php
+	mv ./build/sponsors/sponsor-form/index.html ./build/sponsors/sponsor-form/index.php
 }
 
 build

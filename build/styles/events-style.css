@@ -1,6 +1,5 @@
 /* TODO:
 		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
-		- Fix the layout for the event cards
 */
 
 /* Following is to remove any existing formats */
@@ -65,6 +64,22 @@ body {
 	font-size: 18px;
 }
 
+/* Editing the size of font and padding so it doesn't look weird on smaller windows */
+@media only screen and (max-device-width: 900px) {
+	/* For mobile devices */
+  #events--content #additional-event-text  {
+		padding: 0 10% 25px;
+    font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	/* For smaller windows */
+  #events--content #additional-event-text  {
+		padding: 0 15% 25px;
+	}
+}
+
 #events--content #past-events h1 {
 	text-align: center;
 	padding: 20px 0 ;
@@ -82,9 +97,10 @@ body {
 	margin: 0 auto 40px;
 }
 
+	/* Note: The CUSEC card (5th) has a specific style due to the length of the header not fitting within the orginially defined dimensions. */
 #events--content #event-cards #card-5.left-image-card {
 	grid-template-columns:  15px 30% 15px auto 15px;
- 	grid-template-rows:  15px 40px fit-content 15px;
+ 	grid-template-rows:  15px auto 10px auto 15px;
 	margin: 0 auto 40px;
 }
 
@@ -116,6 +132,14 @@ body {
 	text-align: justify;
 }
 
+#events--content #event-cards #card-5.left-image-card .description {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	text-align: justify;
+}
+
 #events--content #event-cards .right-image-card .description {
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -129,6 +153,13 @@ body {
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 4;
+}
+
+#events--content #event-cards #card-5.left-image-card .left-image {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 5;
 }
 
 #events--content #event-cards .right-image-card .right-image {
