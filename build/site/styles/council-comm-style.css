@@ -58,9 +58,9 @@ body {
 /* Editing the size of font and padding so it doesn't look weird on smaller windows */
 @media only screen and (max-device-width: 1000px) {
 	/* For mobile devices */
-	#comm--content #page-description { font-size: 10px !important; }
+	#comm--content #page-description { font-size: 10px; }
 
-	#comm--content #page-description2 { font-size: 11px !important; }
+	#comm--content #page-description2 { font-size: 11px; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -115,16 +115,7 @@ body {
 /* Editing the size of font and padding so it doesn't look weird on smaller windows */
 @media only screen and (max-device-width: 1000px) {
 	/* For mobile devices */
-	#button { font-size: 15px !important; }
-
-}
-
-@media only screen and (max-width: 1000px) {
-	/* For smaller windows */
-	#button {
-		font-size: 14px;
-		padding: 10px 10px !important;
-	}
+	#button { font-size: 15px; }
 }
 
 	/* Removes box that outlines object on click */

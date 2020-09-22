@@ -1,0 +1,130 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
+/* Following is to remove any existing formats */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Didact Gothic';
+	color: #32292F;
+}
+
+/* Following is to create the CONTAINER box */
+html, body {
+	height: 100%;
+	width: 90%;
+	margin: auto; /* Centers content */
+}
+
+body {
+	background: #e7e7ea;
+	align-items: center;
+}
+
+/* Following is for the FOOTER*/
+#main--body {
+	min-height: 100%;
+	background: #F7F7FF;
+}
+
+#main--footer-setup {
+	overflow: auto;
+	padding-bottom: 275px;	/* Height of the footer */
+}
+
+/* Setting up FLEXBOXs */
+#main--content {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+#main--content > * { flex: 1 100%; }
+
+#main--content .slideshow {
+	flex: 3 0px;
+	order: 2:
+}
+
+#main--content #about {
+	padding: 40px 15% 10%;
+	font-size: 15px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#main--content #about #main-title {
+	/* color: #32292F; */
+	font-family: 'Ubuntu', normal;
+	text-align: center;
+	font-size: 35px;
+	padding: 5px 0 30px;
+}
+
+#main--content #about hr {margin: 25px 0;}
+
+#main--content #about #about--constitution {text-align: center;}
+
+/* Setting up the flickity slideshow */
+.carousel-cell {
+  width: 70%;
+  height: 150px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+	height: 500px;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* CSS is all at the link, so !important is needed to change it */
+	/* Uploaded pictures should have the height of 500px */
+.flickity-viewport {
+	height: 500px !important;
+	background: #F7F7FF;
+	padding: 25px 0 0 0;
+}
+.flickity-page-dots {bottom: 25px !important;}
+.flickity-page-dots .dot.is-selected { background: #F7F7FF; }
+.flickity-page-dots .dot {
+	opacity: 0.45;
+	background: #F7F7FF;
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {opacity: 1;}
+/* arrow color */
+.flickity-prev-next-button .arrow {fill: #32292F;}
+.flickity-prev-next-button.no-svg {color: white;}

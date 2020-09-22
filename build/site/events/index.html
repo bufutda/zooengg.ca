@@ -23,7 +23,33 @@
 
   <body>
 
-		<%- include('../templates/header.partial.ejs', {}); %>
+		<h1 id="council-name"> Electrical, Computer, and Software Engineering Students' Society </h1>
+</div>
+
+<div id="dropdown">
+	<nav>
+		<a href="/zoo/index.html"><img  id="zoo-logo" src="/icon-images/zoo.png"></a>
+		<div class="vertical-line"></div>
+		<ul>
+			<li><a href="/main/index.html">HOME</a></li>
+			<li><a href="#">COUNCIL<img class="arrow" src="/icon-images/icon-dropdown.png"></a>
+				<ul>
+					<li class="council-dropdown"><a href="/council/execs/index.html">EXECUTIVES</a></li>
+					<li class="council-dropdown"><a href="/council/commissioners/index.html">COMMISSIONERS</a></li>
+					<li class="council-dropdown"><a href="/council/applications/index.php">JOIN THE TEAM</a></li>
+				</ul>
+			</li>
+			<li><a href="/events/index.html">EVENTS</a></li>
+			<li><a href="#">SPONSORS<img class="arrow" src="/icon-images/icon-dropdown.png"></a>
+				<ul>
+					<li><a href="/sponsors/our-sponsors/index.html">OUR SPONSORS</a></li>
+					<li><a href="/sponsors/sponsor-form/index.php">BECOME A SPONSOR</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>
+
 
 
 		<div id="events--body">
@@ -165,7 +191,54 @@
 			</div>
 		</div>
 
-	  <%- include('../templates/footer.partial.ejs', {}); %>
+	  	<button onclick="topFunction()" id="to-top" title="Go to top">^</button>
+
+	<div id="footer">
+		<div id="grid">
+			<div id="address">
+				<h4> Electrical, Computer, and Software
+				Engineering Students' Society<br></h4>
+				<p>2500 University Drive, ENA 106<br>
+				Calgary, Alberta, Canada<br>
+				T2N 1N4</p>
+			</div>
+				<div id="site-links1">
+					<h4>Site Links<br></h4>
+					<ul>
+						<li><a href="/main/index.html#main-title">   About Us</a></li>
+						<li><a href="/council/execs/index.html">   Executive Council</a></li>
+						<li><a href="/council/commissioners/index.html">   Commissioners</a></li>
+						<li><a href="/council/applications/index.php">   Join the Team</a></li>
+					</ul>
+				</div>
+				<div id="site-links2">
+					<ul>
+						<br><br>
+						<li><a href="/events/index.html">Events</a></li>
+						<li><a href="/sponsors/our-sponsors/index.html">Our Sponsors</a></li>
+						<li><a href="/sponsors/sponsor-form/index.php">Become a Sponsor</a></li>
+				</div>
+		</div>
+
+		<hr>
+		<div id="social-media">
+			<!--<p><b>FOLLOW US</b></p>-->
+			<a href="https://www.linkedin.com/company/zooengg">
+				<img class="media-icon" src="/icon-images/linkedin.png" alt="linkedin"></a>
+			<a href="https://www.facebook.com/zooengg/">
+				<img class="media-icon" src="/icon-images/facebook.png" alt="facebook"></a>
+			<a href="https://www.instagram.com/inzoogram/">
+				<img class="media-icon" src="/icon-images/instagram.png" alt="instagram"></a>
+			<a href="mailto:execs@zooengg.ca">
+				<img class="media-icon" src="/icon-images/mail-main.png" alt="email"></a>
+			</div>
+
+		<div id="copyright">
+			Copyright &#169; 2020 University of Calgary's Electrical, Computer, and Software Engineering Students' Society.
+		</div>
+
+	</div>
+
 
 		<!-- Scripts -->
 		<script src="../scripts/to-top.js"></script>

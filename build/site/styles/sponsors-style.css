@@ -1,0 +1,99 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
+/* Following is to remove any existing formats */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Didact Gothic';
+	color: #32292F;
+}
+
+html, body {
+	height: 100%;
+	width: 90%;
+	margin: auto; /* Centers content */
+}
+
+body {
+	background: #e7e7ea;
+	align-items: center;
+}
+
+/* Following is for the FOOTER*/
+#sponsor--body {
+	min-height: 100%;
+	background: #F7F7FF;
+}
+
+#sponsor--footer-setup {
+	overflow: auto;
+	padding-bottom: 300px;	/* Height of the footer */
+}
+
+/* Following is to setup the .svg picture: */
+#sponsor--content #sponsor-thanks {
+	text-align: center;
+  position: relative;
+}
+
+#sponsor--content #sponsor-thanks img {
+	width: 270px;
+	padding: 35px 0 15px;
+}
+
+/* Aligning the text that sits in the picture for easy updating */
+#sponsor--content #sponsor-thanks h1#centered {
+	font-size: 45px;
+	font-family: 'Ubuntu', normal;
+
+	position: absolute;
+  top: 46%;
+  left: 50.3%;
+  transform: translate(-50%, -50%);
+}
+
+/* Setting the horizontal rule. TODO: use @media*/
+#sponsor--content #sponsor-thanks hr#hr-left {
+	position: absolute;
+	top: 149px;
+	left: 55px;
+	width: 23%;
+
+	border: 0;
+	background-color: #32292F;
+	padding: 5px 0 0 0;
+	border-radius: 5px;
+}
+
+#sponsor--content #sponsor-thanks hr#hr-right {
+	position: absolute;
+	top: 149px;
+	right: 55px;
+	width: 23%;
+
+	border: 0;
+	background-color: #32292F;
+	padding: 5px 0 0 0;
+
+	border-radius: 5px;
+}
+
+/* Following is to format the sponsorship message*/
+#sponsor--content #sponsor-message {
+	padding: 10px 20%;
+	text-align: justify;
+}
+
+/* Following is to format the sponsors logo*/
+#sponsor--content #sponsor-logos {
+	padding: 25px 10% 20px;
+	text-align: center;
+}
+#sponsor--content #sponsor-logos img {padding: 15px 20px;}
+
+/* Note: the use of the gold, silver and bronze class are in case the sponsorship package chooses to highligh different donation amounts. If this is't in fact the case, remove the code and just use the above (img) for styling*/
+#sponsor--content #sponsor-logos .gold {width: 200px;}
+#sponsor--content #sponsor-logos .silver {width: 175px;}
+#sponsor--content #sponsor-logos .bronze {width: 150px;}

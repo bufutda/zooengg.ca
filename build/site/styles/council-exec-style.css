@@ -1,0 +1,83 @@
+/* TODO:
+		- Fix the font sizes. Make sure they arent huge on cells and small on computers.
+*/
+
+/* Following is to remove any existing formats */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Didact Gothic';
+	color: #32292F;
+}
+
+html, body {
+	height: 100%;
+	width: 90%;
+	margin: auto; /* Centers content */
+}
+
+body {
+	background: #e7e7ea;
+	align-items: center;
+}
+
+/* Following is for the FOOTER*/
+#exec--body {
+	min-height: 100%;
+	background: #F7F7FF;
+}
+
+#exec--footer-setup {
+	overflow: auto;
+	padding-bottom: 275px;	/* Height of the footer */
+}
+
+/* The following is to setup the actual page content*/
+#exec--content #exec-title {
+		font-family: 'Ubuntu', normal;
+    text-align: center;
+    font-size: 35px;
+		padding: 50px 35px 0;
+}
+
+#exec--content #page-description {
+	padding: 15px 15% 15px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#exec--content #profile-buffer {padding: 0 24px;}
+
+/* Following sets up the executives bio cards */
+#exec--content #profile-cards{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 10px 30px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#exec--content .profile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 300px;
+	margin: 0 9px 30px;
+	text-align: center;
+	background: #ababab12;
+	border-radius: 25px;
+}
+
+#exec--content .profile h1 { font-size: 20px; }
+
+#exec--content .profile .bio {
+	padding: 9px 20px 0;
+	font-size: 13px;
+}
+
+#exec--content img.mail-pic {width: 45px;}
+
+#exec--content img.profile-pic {
+		object-fit: cover;
+		height: 275px; /* Pictures should have a max height of 275px else will be cropped*/
+	  border-top-left-radius: 25px;
+	  border-top-right-radius: 25px;
+}

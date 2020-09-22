@@ -6,13 +6,16 @@
 -->
 	<head>
 		<title>
-			ZOO Meaning
+			ZOO Homepage
 		</title>
+		<!-- META tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Style Guides -->
 		<link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="/styles/website-style.css">
-		<link rel="stylesheet" type="text/css" href="../styles/zoo-style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/website-style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/main-style.css">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/png" href="/icon-images/favicon.png">
 	</head>
@@ -47,44 +50,43 @@
 </div>
 
 
+	  <div id="main--body">
 
-	  <div id="zoo--body">
-			<div id="zoo--footer-setup">
-				<div id="zoo--content">
-					<h2 id="zoo-title">Meaning of ZOO</h2>
-					<p id="zoo-description">The meaning behind ZOO has been a long-standing question amongst many people, Council members included. Many have saught after the meaning, yet no story has been considered the absolute truth. Despite this fact, there is one story in particular that stands out, one that is commonly used by the Society when asked the age-old question. This story, provided by a ZOO Alumni, was written as follows:</p><br>
+			<div id="main--footer-setup">
 
-					<em><p class="zoo-story">As of today, we may have become even greater goofballs than we were in 1974. But that was the year where we started. Some would say it was a cold winter day, others would say it was quite sunny. But we do know that there was a group of students who wanted to prove a point to their professor Dr. R. B. S. Jr. This, as of what I have been told, was a professor who would go an entire class without looking at his students and just writing on the blackboard. So this day, in early 1974, an entire class of 4th year Electrical Engineering students decided to skip his class and see if their prof would even notice.</p><br>
+				<div id="main--content">
 
-					<p class="zoo-story">The group stuffed all of their jackets full, added some fake faces, and skipped out to Dinny&#39;s Den. A few of them hid in the class to see the reaction, but it nearly took half the class. Once the prof finally realized his class was inordinately quiet, he finally turns around and realizes that he is being pranked. He just exclaims that the class is a ZOO, and walks out.</p></em><br>
-
-					<hr>
-
-					<b><p style="padding: 0 0 35px">The name stuck, and from 1974 until forever, we have been, and will be, recognized as ZOO.</p></b>
-					<div id="zoo-pictures">
-						<!-- thumbnail image wrapped in a link -->
-						<a href="#img1">
-						  <img src="/zoo/assets/meaningOfZOO1.png" class="thumbnail">
-						</a>
-
-						<a href="#img2">
-							<img src="/zoo/assets/meaningOfZOO2.png" class="thumbnail">
-						</a>
-
-						<!-- lightbox container hidden with CSS -->
-						<a href="#_" class="lightbox" id="img1">
-						  <img src="/zoo/assets/meaningOfZOO1.png">
-						</a>
-
-						<a href="#_" class="lightbox" id="img2">
-							<img src="/zoo/assets/meaningOfZOO2.png">
-						</a>
+					<div class="gallery js-flickity"
+					  data-flickity-options='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 3000, "resize": true}'>
+						<div class="gallery-cell">
+							<img src="/main/assets/MainBanner.png">
+						</div>
+						<div class="gallery-cell">
+							<img src="/main/assets/CouncilGroup.png">
+						</div>
+						<div class="gallery-cell">
+							<img src="/main/assets/CouncilGroup2.png">
+						</div>
 					</div>
+
+					<div id="about">
+						<h2 id="main-title">About Us</h2>
+						<p>The University of Calgary's Electrical, Computer, and Software Engineering Students' Society, affectionally referred to as ZOO, is an initiative run by students, for students. ZOO aims to support their undergraduate students, both academically and socially, by providing them with a variety of events to enrich their University experience. Through the Society, we hope assist students in clearing the gap between university and industry. </p><br>
+
+						<p> In addition to those responsibilities, ZOO serves as a liaison between the Department (ECE) and the many Electrical, Software and Computer Engineering students. We work hard to represent your opinions and ensure that your voices are heard.</p></br>
+
+						<p>Any inquiries for ZOO can be voiced in-person in ENA 106, or via email to execs@zooengg.ca. We will attempt to answer questions to the best of our ability and if necessary, direct you to the relevant Department employee.</p><br>
+						<hr>
+						<p id="about--constitution">ZOO abides by the Club Constitution</p>
+					</div>
+					<!-- Flexbox didn't work without the insertion of <p> -->
+					<p></p>
 				</div>
 			</div>
 		</div>
 
-			<button onclick="topFunction()" id="to-top" title="Go to top">^</button>
+
+	  	<button onclick="topFunction()" id="to-top" title="Go to top">^</button>
 
 	<div id="footer">
 		<div id="grid">
@@ -135,7 +137,7 @@
 
 		<!-- Scripts -->
 		<script src="/scripts/to-top.js"></script>
-		<script src="/scripts/image-modal.js"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 	</body>
 </html>

@@ -73,7 +73,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	/* For smaller windows */
   #events--content #additional-event-text  {
 		padding: 0 15% 25px;
@@ -173,6 +173,7 @@ body {
   object-fit: cover;
   width: 65%;
   max-height: 100%;
+	vertical-align: middle;
 }
 
 /* Setting up the flickity slideshow */
